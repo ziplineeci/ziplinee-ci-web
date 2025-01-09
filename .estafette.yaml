@@ -1,0 +1,105 @@
+builder:
+  track: dev
+
+labels:
+  type: web
+  app-group: estafette-ci
+  team: estafette-team
+  language: nodejs
+
+version:
+  semver:
+    major: 1
+    minor: 4
+    patch: 0
+
+stages:
+  audit-and-restore:
+    parallelStages:
+      snyk:
+        image: extensions/snyk:dev
+        severity-threshold: medium
+
+      audit:
+        image: extensions/npm-audit:dev
+        action: audit
+        level: low
+        dev-level: critical
+        workspace: estafette
+        channels:
+        - '#npm-audit'
+
+      restore:
+        image: node:16-alpine
+        env:
+          npm_config_update-notifier: false
+        commands:
+        - npm ci
+
+  lint-and-build:
+    parallelStages:
+      lint:
+        image: node:16-alpine
+        env:
+          npm_config_update-notifier: false
+        commands:
+        - npm run lint
+
+      build:
+        image: node:16-alpine
+        env:
+          npm_config_update-notifier: false
+        commands:
+        - npm run build
+
+  bake:
+    image: extensions/docker:dev
+    action: build
+    severity: unknown
+    repositories:
+    - estafette
+    path: ./dist
+    copy:
+    - favicon.ico
+    - nginx.vh.default.conf
+    - docker-entrypoint.sh
+    - package-lock.json
+
+  test:
+    services:
+    - name: ci.estafette.io
+      image: estafette/estafette-ci-web:${ESTAFETTE_BUILD_VERSION}
+      readiness:
+        path: /robots.txt
+        port: 5000
+
+    image: node:16-alpine
+    env:
+      npm_config_update-notifier: false
+    commands:
+    - apk add curl
+    - curl --fail http://ci.estafette.io:5000/manifest/encrypt
+
+  push-to-docker-hub:
+    image: extensions/docker:dev
+    retries: 5
+    action: push
+    repositories:
+    - estafette
+
+  tag-revision:
+    image: bitnami/git
+    commands:
+    - git tag ${ESTAFETTE_BUILD_VERSION}
+    - git push origin ${ESTAFETTE_BUILD_VERSION}
+    when: status == 'succeeded' &&
+      branch == 'main'
+
+  slack-notify:
+    image: extensions/slack-build-status:dev
+    workspace: estafette
+    channels:
+    - '#build-status'
+    when:
+      status == 'succeeded' ||
+      status == 'failed'

@@ -1,0 +1,103 @@
+{
+  "id": "657200275663814672",
+  "repoSource": "github.com",
+  "repoOwner": "estafette",
+  "repoName": "estafette-letsencrypt-certificate",
+  "repoBranch": "main",
+  "repoRevision": "bd4d0f3f88f71a93f38a6602d3c42f434957ad25",
+  "buildVersion": "1.2.11-main-224",
+  "buildStatus": "succeeded",
+  "labels": [
+    {
+      "key": "app-group",
+      "value": "estafette-controllers"
+    },
+    {
+      "key": "language",
+      "value": "golang"
+    },
+    {
+      "key": "team",
+      "value": "estafette-team"
+    },
+    {
+      "key": "type",
+      "value": "service"
+    }
+  ],
+  "releaseTargets": [
+    {
+      "name": "release",
+      "activeReleases": [
+        {
+          "name": "release",
+          "id": "657201968156409872",
+          "repoSource": "github.com",
+          "repoOwner": "estafette",
+          "repoName": "estafette-letsencrypt-certificate",
+          "releaseVersion": "1.2.10",
+          "releaseStatus": "succeeded",
+          "triggerEvents": [
+            {
+              "fired": true,
+              "manual": {
+                "userID": "me@estafette.io"
+              }
+            }
+          ],
+          "insertedAt": "2021-05-10T07:42:04.070833Z",
+          "startedAt": "2021-05-10T07:42:05.537383Z",
+          "updatedAt": "2021-05-10T07:42:35.861327Z",
+          "duration": 30000000000,
+          "pendingDuration": 1000000000,
+          "extraInfo": {
+            "medianPendingDuration": 1000000000,
+            "medianDuration": 32000000000
+          }
+        }
+      ]
+    }
+  ],
+  "commits": [
+    {
+      "message": "bump version to 1.2.11",
+      "author": {
+        "email": "me@estafette.io",
+        "name": "Just Me",
+        "username": "JustMe"
+      }
+    }
+  ],
+  "triggerEvents": [
+    {
+      "fired": true,
+      "git": {
+        "event": "push",
+        "repository": "github.com/estafette/estafette-letsencrypt-certificate",
+        "branch": "main"
+      }
+    }
+  ],
+  "insertedAt": "2021-05-10T07:33:27.563039Z",
+  "startedAt": "2021-05-10T07:33:29.166605Z",
+  "updatedAt": "2021-05-10T07:36:36.584113Z",
+  "duration": 187000000000,
+  "pendingDuration": 1000000000,
+  "lastUpdatedAt": "2021-05-10T07:42:35.861327Z",
+  "extraInfo": {
+    "medianPendingDuration": 1000000000,
+    "medianDuration": 195000000000
+  },
+  "groups": [
+    {
+      "id": "568087204531535884",
+      "name": "Estafette"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "568030038580756491",
+      "name": "Travix"
+    }
+  ]
+}
