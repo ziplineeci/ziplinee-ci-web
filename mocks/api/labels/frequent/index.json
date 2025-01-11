@@ -7,32 +7,32 @@
         },
         {
             "key": "app-group",
-            "value": "estafette-ci",
+            "value": "zipline-ci",
             "pipelinescount": 5
         },
         {
             "key": "app-group",
-            "value": "estafette-ci-extensions",
+            "value": "zipline-ci-extensions",
             "pipelinescount": 3
         },
         {
             "key": "app-group",
-            "value": "estafette-kube-controllers",
+            "value": "zipline-kube-controllers",
             "pipelinescount": 3
         },
         {
             "key": "team",
-            "value": "estafette-team",
+            "value": "zipline-team",
             "pipelinescount": 2
         },
         {
             "key": "team",
-            "value": "estafette-ci-team",
+            "value": "zipline-ci-team",
             "pipelinescount": 2
         },
         {
             "key": "team",
-            "value": "estafette-extension-team",
+            "value": "zipline-extension-team",
             "pipelinescount": 2
         },
         {

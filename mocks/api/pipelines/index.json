@@ -3,8 +3,8 @@
     {
       "id": "664371374972960785",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-api",
+      "repoOwner": "ziplineci",
+      "repoName": "zipline-ci-api",
       "repoBranch": "main",
       "repoRevision": "6a25676b2dee566f8e951a4e21164122e074584e",
       "buildVersion": "1.0.0-main-1728",
@@ -12,7 +12,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "estafette-ci"
+          "value": "zipline-ci"
         },
         {
           "key": "language",
@@ -20,7 +20,7 @@
         },
         {
           "key": "team",
-          "value": "estafette"
+          "value": "zipline"
         },
         {
           "key": "type",
@@ -29,7 +29,7 @@
       ],
       "releaseTargets": [
         {
-          "name": "tooling-estafette",
+          "name": "tooling-zipline",
           "actions": [
             {
               "name": "deploy-canary"
@@ -48,25 +48,25 @@
           ],
           "activeReleases": [
             {
-              "name": "tooling-estafette",
+              "name": "tooling-zipline",
               "action": "deploy-stable",
               "id": "664373458571591697",
               "repoSource": "github.com",
-              "repoOwner": "estafette",
-              "repoName": "estafette-ci-api",
+              "repoOwner": "ziplineci",
+              "repoName": "zipline-ci-api",
               "releaseVersion": "1.0.0-main-1728",
               "releaseStatus": "succeeded",
               "triggerEvents": [
                 {
                   "fired": true,
                   "manual": {
-                    "userID": "me@estafette.io"
+                    "userID": "me@zipline.io"
                   }
                 }
               ],
-              "insertedAt": "2021-06-04T15:38:09.260982Z",
-              "startedAt": "2021-06-04T15:38:11.572968Z",
-              "updatedAt": "2021-06-04T15:39:25.13434Z",
+              "insertedAt": "2025-01-04T15:38:09.260982Z",
+              "startedAt": "2025-01-04T15:38:11.572968Z",
+              "updatedAt": "2025-01-04T15:39:25.13434Z",
               "duration": 73000000000,
               "pendingDuration": 2000000000,
               "extraInfo": {
@@ -75,25 +75,25 @@
               }
             },
             {
-              "name": "tooling-estafette",
+              "name": "tooling-zipline",
               "action": "deploy-canary",
               "id": "664372945397841937",
               "repoSource": "github.com",
-              "repoOwner": "estafette",
-              "repoName": "estafette-ci-api",
+              "repoOwner": "ziplineci",
+              "repoName": "zipline-ci-api",
               "releaseVersion": "1.0.0-main-1728",
               "releaseStatus": "succeeded",
               "triggerEvents": [
                 {
                   "fired": true,
                   "manual": {
-                    "userID": "me@estafette.io"
+                    "userID": "me@zipline.io"
                   }
                 }
               ],
-              "insertedAt": "2021-06-04T15:35:32.652756Z",
-              "startedAt": "2021-06-04T15:35:34.746145Z",
-              "updatedAt": "2021-06-04T15:36:09.231216Z",
+              "insertedAt": "2025-01-04T15:35:32.652756Z",
+              "startedAt": "2025-01-04T15:35:34.746145Z",
+              "updatedAt": "2025-01-04T15:36:09.231216Z",
               "duration": 34000000000,
               "pendingDuration": 2000000000,
               "extraInfo": {
@@ -102,25 +102,25 @@
               }
             },
             {
-              "name": "tooling-estafette",
+              "name": "tooling-zipline",
               "action": "restart-stable",
               "id": "664308454879461393",
               "repoSource": "github.com",
-              "repoOwner": "estafette",
-              "repoName": "estafette-ci-api",
+              "repoOwner": "ziplineci",
+              "repoName": "zipline-ci-api",
               "releaseVersion": "1.0.0-main-1722",
               "releaseStatus": "succeeded",
               "triggerEvents": [
                 {
                   "fired": true,
                   "manual": {
-                    "userID": "me@estafette.io"
+                    "userID": "me@zipline.io"
                   }
                 }
               ],
-              "insertedAt": "2021-06-04T10:07:31.708355Z",
-              "startedAt": "2021-06-04T10:07:33.422702Z",
-              "updatedAt": "2021-06-04T10:08:33.80782Z",
+              "insertedAt": "2025-01-04T10:07:31.708355Z",
+              "startedAt": "2025-01-04T10:07:33.422702Z",
+              "updatedAt": "2025-01-04T10:08:33.80782Z",
               "duration": 60000000000,
               "pendingDuration": 1000000000,
               "extraInfo": {
@@ -129,25 +129,25 @@
               }
             },
             {
-              "name": "tooling-estafette",
+              "name": "tooling-zipline",
               "action": "rollback-canary",
               "id": "663722926313242642",
               "repoSource": "github.com",
-              "repoOwner": "estafette",
-              "repoName": "estafette-ci-api",
+              "repoOwner": "ziplineci",
+              "repoName": "zipline-ci-api",
               "releaseVersion": "1.0.0-main-1710",
               "releaseStatus": "succeeded",
               "triggerEvents": [
                 {
                   "fired": true,
                   "manual": {
-                    "userID": "me@estafette.io"
+                    "userID": "me@zipline.io"
                   }
                 }
               ],
-              "insertedAt": "2021-06-02T08:29:22.570649Z",
-              "startedAt": "2021-06-02T08:29:24.685091Z",
-              "updatedAt": "2021-06-02T08:29:42.049986Z",
+              "insertedAt": "2025-01-02T08:29:22.570649Z",
+              "startedAt": "2025-01-02T08:29:24.685091Z",
+              "updatedAt": "2025-01-02T08:29:42.049986Z",
               "duration": 17000000000,
               "pendingDuration": 2000000000,
               "extraInfo": {
@@ -167,19 +167,19 @@
               "name": "helm-diff",
               "id": "503219038331437061",
               "repoSource": "github.com",
-              "repoOwner": "estafette",
-              "repoName": "estafette-ci-api",
+              "repoOwner": "ziplineci",
+              "repoName": "zipline-ci-api",
               "releaseVersion": "1.0.0-add-official-helm-chart-892",
               "releaseStatus": "succeeded",
               "triggerEvents": [
                 {
                   "manual": {
-                    "userID": "me@estafette.io"
+                    "userID": "me@zipline.io"
                   }
                 }
               ],
-              "insertedAt": "2019-11-13T10:24:23.162207Z",
-              "updatedAt": "2019-11-13T10:24:46.091556Z",
+              "insertedAt": "2025-01-01T10:24:23.162207Z",
+              "updatedAt": "2025-01-01T10:24:46.091556Z",
               "duration": 22000000000,
               "pendingDuration": 0
             }
@@ -190,7 +190,7 @@
         {
           "message": "fix default bot sorting",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@zipline.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -202,7 +202,7 @@
           "pipeline": {
             "event": "finished",
             "status": "succeeded",
-            "name": "github.com/estafette/estafette-ci-db-migrator",
+            "name": "github.com/zipline/zipline-ci-db-migrator",
             "branch": "main"
           },
           "builds": {
@@ -215,17 +215,17 @@
           "fired": true,
           "git": {
             "event": "push",
-            "repository": "github.com/estafette/estafette-ci-api",
+            "repository": "github.com/zipline/zipline-ci-api",
             "branch": "main"
           }
         }
       ],
-      "insertedAt": "2021-06-04T15:27:33.397005Z",
-      "startedAt": "2021-06-04T15:27:34.463625Z",
-      "updatedAt": "2021-06-04T15:34:31.039904Z",
+      "insertedAt": "2025-01-01T15:27:33.397005Z",
+      "startedAt": "2025-01-01T15:27:34.463625Z",
+      "updatedAt": "2025-01-01T15:34:31.039904Z",
       "duration": 416000000000,
       "pendingDuration": 1000000000,
-      "lastUpdatedAt": "2021-06-04T15:39:25.13434Z",
+      "lastUpdatedAt": "2025-01-01T15:39:25.13434Z",
       "extraInfo": {
         "medianPendingDuration": 1000000000,
         "medianDuration": 405000000000
@@ -233,13 +233,13 @@
       "groups": [
         {
           "id": "568087204531535884",
-          "name": "Estafette"
+          "name": "zipline"
         }
       ],
       "organizations": [
         {
           "id": "568393673343696906",
-          "name": "Estafette"
+          "name": "zipline"
         },
         {
           "id": "568030038580756491",
@@ -250,8 +250,8 @@
     {
       "id": "664302210794422290",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-builder",
+      "repoOwner": "ziplineci",
+      "repoName": "zipline-ci-builder",
       "repoBranch": "main",
       "repoRevision": "f3307c327eaa6cd885b19e0ea120ba103a76a05a",
       "buildVersion": "0.0.883",
@@ -259,7 +259,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "estafette-ci"
+          "value": "zipline-ci"
         },
         {
           "key": "language",
@@ -267,7 +267,7 @@
         },
         {
           "key": "team",
-          "value": "estafette"
+          "value": "zipline"
         }
       ],
       "releaseTargets": [
@@ -278,8 +278,8 @@
               "name": "dev",
               "id": "664302984403714064",
               "repoSource": "github.com",
-              "repoOwner": "estafette",
-              "repoName": "estafette-ci-builder",
+              "repoOwner": "ziplineci",
+              "repoName": "zipline-ci-builder",
               "releaseVersion": "0.0.883",
               "releaseStatus": "succeeded",
               "triggerEvents": [
@@ -288,17 +288,17 @@
                   "pipeline": {
                     "buildVersion": "0.0.883",
                     "repoSource": "github.com",
-                    "repoOwner": "estafette",
-                    "repoName": "estafette-ci-builder",
+                    "repoOwner": "ziplineci",
+                    "repoName": "zipline-ci-builder",
                     "repoBranch": "main",
                     "status": "succeeded",
                     "event": "finished"
                   }
                 }
               ],
-              "insertedAt": "2021-06-04T09:39:42.251648Z",
-              "startedAt": "2021-06-04T09:39:43.964714Z",
-              "updatedAt": "2021-06-04T09:40:14.909457Z",
+              "insertedAt": "2025-01-01T09:39:42.251648Z",
+              "startedAt": "2025-01-01T09:39:43.964714Z",
+              "updatedAt": "2025-01-01T09:40:14.909457Z",
               "duration": 30000000000,
               "pendingDuration": 1000000000,
               "extraInfo": {
@@ -315,15 +315,15 @@
               "name": "beta",
               "id": "663997181020307474",
               "repoSource": "github.com",
-              "repoOwner": "estafette",
-              "repoName": "estafette-ci-builder",
+              "repoOwner": "ziplineci",
+              "repoName": "zipline-ci-builder",
               "releaseVersion": "0.0.882",
               "releaseStatus": "succeeded",
               "triggerEvents": [
                 {
                   "fired": true,
                   "manual": {
-                    "userID": "me@estafette.io"
+                    "userID": "me@zipline.io"
                   }
                 }
               ],
@@ -346,15 +346,15 @@
               "name": "stable",
               "id": "663997192423964688",
               "repoSource": "github.com",
-              "repoOwner": "estafette",
-              "repoName": "estafette-ci-builder",
+              "repoOwner": "ziplineci",
+              "repoName": "zipline-ci-builder",
               "releaseVersion": "0.0.882",
               "releaseStatus": "succeeded",
               "triggerEvents": [
                 {
                   "fired": true,
                   "manual": {
-                    "userID": "me@estafette.io"
+                    "userID": "me@zipline.io"
                   }
                 }
               ],
@@ -377,15 +377,15 @@
               "name": "nanoserver-1809-dev",
               "id": "663802179528294416",
               "repoSource": "github.com",
-              "repoOwner": "estafette",
-              "repoName": "estafette-ci-builder",
+              "repoOwner": "ziplineci",
+              "repoName": "zipline-ci-builder",
               "releaseVersion": "0.0.876",
               "releaseStatus": "canceled",
               "triggerEvents": [
                 {
                   "fired": true,
                   "manual": {
-                    "userID": "me@estafette.io"
+                    "userID": "me@zipline.io"
                   }
                 }
               ],
@@ -407,15 +407,15 @@
               "name": "nanoserver-1809-beta",
               "id": "663802187485839377",
               "repoSource": "github.com",
-              "repoOwner": "estafette",
-              "repoName": "estafette-ci-builder",
+              "repoOwner": "ziplineci",
+              "repoName": "zipline-ci-builder",
               "releaseVersion": "0.0.876",
               "releaseStatus": "canceled",
               "triggerEvents": [
                 {
                   "fired": true,
                   "manual": {
-                    "userID": "me@estafette.io"
+                    "userID": "me@zipline.io"
                   }
                 }
               ],
@@ -437,15 +437,15 @@
               "name": "nanoserver-1809-stable",
               "id": "663802194910576656",
               "repoSource": "github.com",
-              "repoOwner": "estafette",
-              "repoName": "estafette-ci-builder",
+              "repoOwner": "ziplineci",
+              "repoName": "zipline-ci-builder",
               "releaseVersion": "0.0.876",
               "releaseStatus": "canceled",
               "triggerEvents": [
                 {
                   "fired": true,
                   "manual": {
-                    "userID": "me@estafette.io"
+                    "userID": "me@zipline.io"
                   }
                 }
               ],
@@ -465,7 +465,7 @@
         {
           "message": "upgrade to docker 20.10.7",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@zipline.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -476,7 +476,7 @@
           "pipeline": {
             "event": "finished",
             "status": "succeeded",
-            "name": "github.com/estafette/estafette-ci-builder",
+            "name": "github.com/zipline/zipline-ci-builder",
             "branch": ".+"
           },
           "releases": {
@@ -490,17 +490,17 @@
           "fired": true,
           "git": {
             "event": "push",
-            "repository": "github.com/estafette/estafette-ci-builder",
+            "repository": "github.com/zipline/zipline-ci-builder",
             "branch": "main"
           }
         }
       ],
-      "insertedAt": "2021-06-04T09:35:46.164567Z",
-      "startedAt": "2021-06-04T09:35:47.255915Z",
-      "updatedAt": "2021-06-04T09:39:41.793065Z",
+      "insertedAt": "2025-01-01T09:35:46.164567Z",
+      "startedAt": "2025-01-01T09:35:47.255915Z",
+      "updatedAt": "2025-01-01T09:39:41.793065Z",
       "duration": 234000000000,
       "pendingDuration": 1000000000,
-      "lastUpdatedAt": "2021-06-04T09:40:14.909457Z",
+      "lastUpdatedAt": "2025-01-01T09:40:14.909457Z",
       "extraInfo": {
         "medianPendingDuration": 1000000000,
         "medianDuration": 205000000000
@@ -508,21 +508,21 @@
       "groups": [
         {
           "id": "568087204531535884",
-          "name": "Estafette"
+          "name": "zipline"
         }
       ],
       "organizations": [
         {
           "id": "568393673343696906",
-          "name": "Estafette"
+          "name": "zipline"
         }
       ]
     },
     {
       "id": "663986258637160464",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-contracts",
+      "repoOwner": "ziplineci",
+      "repoName": "zipline-ci-contracts",
       "repoBranch": "main",
       "repoRevision": "262feb8c7593d238532524f26f0ed779a3f1dbe7",
       "buildVersion": "0.0.260",
@@ -530,7 +530,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "estafette-ci"
+          "value": "zipline-ci"
         },
         {
           "key": "language",
@@ -538,7 +538,7 @@
         },
         {
           "key": "team",
-          "value": "estafette"
+          "value": "zipline"
         },
         {
           "key": "type",
@@ -549,7 +549,7 @@
         {
           "message": "rename BuildEvent enum to BuildEventType",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@zipline.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -560,7 +560,7 @@
           "fired": true,
           "git": {
             "event": "push",
-            "repository": "github.com/estafette/estafette-ci-contracts",
+            "repository": "github.com/zipline/zipline-ci-contracts",
             "branch": "main"
           }
         }
@@ -578,21 +578,21 @@
       "groups": [
         {
           "id": "568087204531535884",
-          "name": "Estafette"
+          "name": "zipline"
         }
       ],
       "organizations": [
         {
           "id": "568393673343696906",
-          "name": "Estafette"
+          "name": "zipline"
         }
       ]
     },
     {
       "id": "635745212316319756",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-crypt",
+      "repoOwner": "ziplineci",
+      "repoName": "zipline-ci-crypt",
       "repoBranch": "main",
       "repoRevision": "2bdac368fc50e1a14d7e7122bad36a12f43cb533",
       "buildVersion": "0.0.42",
@@ -600,7 +600,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "estafette-ci"
+          "value": "zipline-ci"
         },
         {
           "key": "language",
@@ -608,7 +608,7 @@
         },
         {
           "key": "team",
-          "value": "estafette-team"
+          "value": "zipline-team"
         },
         {
           "key": "type",
@@ -619,7 +619,7 @@
         {
           "message": "add GetInvalidRestrictedSecrets",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@zipline.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -630,7 +630,7 @@
           "fired": true,
           "git": {
             "event": "push",
-            "repository": "github.com/estafette/estafette-ci-crypt",
+            "repository": "github.com/zipline/zipline-ci-crypt",
             "branch": "main"
           }
         }
@@ -648,21 +648,21 @@
       "groups": [
         {
           "id": "568087204531535884",
-          "name": "Estafette"
+          "name": "zipline"
         }
       ],
       "organizations": [
         {
           "id": "568393673343696906",
-          "name": "Estafette"
+          "name": "zipline"
         }
       ]
     },
     {
       "id": "665120071639400465",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-demo",
+      "repoOwner": "ziplineci",
+      "repoName": "zipline-ci-demo",
       "repoBranch": "main",
       "repoRevision": "96e910ce80a9caee99f9cde2dc46dcc66f2a840e",
       "buildVersion": "0.0.48",
@@ -670,7 +670,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "estafette-ci"
+          "value": "zipline-ci"
         },
         {
           "key": "language",
@@ -678,14 +678,14 @@
         },
         {
           "key": "team",
-          "value": "estafette-team"
+          "value": "zipline-team"
         }
       ],
       "commits": [
         {
           "message": "fetch pipeline bots",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@zipline.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -696,17 +696,17 @@
           "fired": true,
           "git": {
             "event": "push",
-            "repository": "github.com/estafette/estafette-ci-demo",
+            "repository": "github.com/zipline/zipline-ci-demo",
             "branch": "main"
           }
         }
       ],
-      "insertedAt": "2021-06-07T06:55:37.487067Z",
-      "startedAt": "2021-06-07T06:56:47.547531Z",
-      "updatedAt": "2021-06-07T06:56:47.547531Z",
+      "insertedAt": "2025-01-07T06:55:37.487067Z",
+      "startedAt": "2025-01-07T06:56:47.547531Z",
+      "updatedAt": "2025-01-07T06:56:47.547531Z",
       "duration": 0,
       "pendingDuration": 70000000000,
-      "lastUpdatedAt": "2021-06-07T06:56:47.547531Z",
+      "lastUpdatedAt": "2025-01-07T06:56:47.547531Z",
       "extraInfo": {
         "medianPendingDuration": 1000000000,
         "medianDuration": 53000000000
@@ -714,21 +714,21 @@
       "groups": [
         {
           "id": "568087204531535884",
-          "name": "Estafette"
+          "name": "zipline"
         }
       ],
       "organizations": [
         {
           "id": "568393673343696906",
-          "name": "Estafette"
+          "name": "zipline"
         }
       ]
     },
     {
       "id": "663226580904869905",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-manifest",
+      "repoOwner": "ziplineci",
+      "repoName": "zipline-ci-manifest",
       "repoBranch": "main",
       "repoRevision": "ec9991f012f1ec7c5a06f5dbcd695fe9acac4633",
       "buildVersion": "0.1.190",
@@ -736,7 +736,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "estafette-ci"
+          "value": "zipline-ci"
         },
         {
           "key": "language",
@@ -744,7 +744,7 @@
         },
         {
           "key": "team",
-          "value": "estafette"
+          "value": "zipline"
         },
         {
           "key": "type",
@@ -755,7 +755,7 @@
         {
           "message": "add bots definition to manifest to act on any github or bitbucket event",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@zipline.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -763,7 +763,7 @@
         {
           "message": "add builder, clone and triggers to bots",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@zipline.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -771,7 +771,7 @@
         {
           "message": "add bitbucket and github triggers instead of events property on bots to reuse trigger system",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@zipline.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -779,7 +779,7 @@
         {
           "message": "match github and bitbucket events on repository by default if the event is repo specific",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@zipline.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -787,7 +787,7 @@
         {
           "message": "set bot on botaction to trigger correct bot",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@zipline.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -795,7 +795,7 @@
         {
           "message": "add event body property to bitbucket/github events",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@zipline.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -806,7 +806,7 @@
           "fired": true,
           "git": {
             "event": "push",
-            "repository": "github.com/estafette/estafette-ci-manifest",
+            "repository": "github.com/zipline/zipline-ci-manifest",
             "branch": "main"
           }
         }
@@ -824,21 +824,21 @@
       "groups": [
         {
           "id": "568087204531535884",
-          "name": "Estafette"
+          "name": "zipline"
         }
       ],
       "organizations": [
         {
           "id": "568393673343696906",
-          "name": "Estafette"
+          "name": "zipline"
         }
       ]
     },
     {
       "id": "664372343046012945",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-web",
+      "repoOwner": "ziplineci",
+      "repoName": "zipline-ci-web",
       "repoBranch": "main",
       "repoRevision": "9f8dabadb4b13187cfe4471991b767d9091738d7",
       "buildVersion": "1.0.0-main-1112",
@@ -846,7 +846,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "estafette-ci"
+          "value": "zipline-ci"
         },
         {
           "key": "language",
@@ -854,7 +854,7 @@
         },
         {
           "key": "team",
-          "value": "estafette-team"
+          "value": "zipline-team"
         },
         {
           "key": "type",
@@ -863,7 +863,7 @@
       ],
       "releaseTargets": [
         {
-          "name": "tooling-estafette",
+          "name": "tooling-zipline",
           "actions": [
             {
               "name": "deploy-simple"
@@ -875,25 +875,25 @@
           ],
           "activeReleases": [
             {
-              "name": "tooling-estafette",
+              "name": "tooling-zipline",
               "action": "deploy-simple",
               "id": "664373422710980625",
               "repoSource": "github.com",
-              "repoOwner": "estafette",
-              "repoName": "estafette-ci-web",
+              "repoOwner": "ziplineci",
+              "repoName": "zipline-ci-web",
               "releaseVersion": "1.0.0-main-1112",
               "releaseStatus": "succeeded",
               "triggerEvents": [
                 {
                   "fired": true,
                   "manual": {
-                    "userID": "me@estafette.io"
+                    "userID": "me@zipline.io"
                   }
                 }
               ],
-              "insertedAt": "2021-06-04T15:37:58.317229Z",
-              "startedAt": "2021-06-04T15:38:00.29033Z",
-              "updatedAt": "2021-06-04T15:39:04.394577Z",
+              "insertedAt": "2025-01-01T15:37:58.317229Z",
+              "startedAt": "2025-01-01T15:38:00.29033Z",
+              "updatedAt": "2025-01-01T15:39:04.394577Z",
               "duration": 64000000000,
               "pendingDuration": 1000000000,
               "extraInfo": {
@@ -902,18 +902,18 @@
               }
             },
             {
-              "name": "tooling-estafette",
+              "name": "tooling-zipline",
               "action": "restart-simple",
               "id": "566675166820335628",
               "repoSource": "github.com",
-              "repoOwner": "estafette",
-              "repoName": "estafette-ci-web",
+              "repoOwner": "ziplineci",
+              "repoName": "zipline-ci-web",
               "releaseVersion": "0.1.942",
               "releaseStatus": "succeeded",
               "triggerEvents": [
                 {
                   "manual": {
-                    "userID": "me@estafette.io"
+                    "userID": "me@zipline.io"
                   }
                 }
               ],
@@ -930,7 +930,7 @@
         {
           "message": "drop invalid filters from branches and bot filters",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@zipline.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -941,17 +941,17 @@
           "fired": true,
           "git": {
             "event": "push",
-            "repository": "github.com/estafette/estafette-ci-web",
+            "repository": "github.com/zipline/zipline-ci-web",
             "branch": "main"
           }
         }
       ],
-      "insertedAt": "2021-06-04T15:32:28.829422Z",
-      "startedAt": "2021-06-04T15:32:34.175242Z",
-      "updatedAt": "2021-06-04T15:37:25.958029Z",
+      "insertedAt": "2025-01-01T15:32:28.829422Z",
+      "startedAt": "2025-01-01T15:32:34.175242Z",
+      "updatedAt": "2025-01-01T15:37:25.958029Z",
       "duration": 291000000000,
       "pendingDuration": 5000000000,
-      "lastUpdatedAt": "2021-06-04T15:39:04.394577Z",
+      "lastUpdatedAt": "2025-01-01T15:39:04.394577Z",
       "extraInfo": {
         "medianPendingDuration": 1000000000,
         "medianDuration": 290000000000
@@ -959,21 +959,21 @@
       "groups": [
         {
           "id": "568087204531535884",
-          "name": "Estafette"
+          "name": "zipline"
         }
       ],
       "organizations": [
         {
           "id": "568393673343696906",
-          "name": "Estafette"
+          "name": "zipline"
         }
       ]
     },
     {
       "id": "611916537931399178",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-cloudflare-dns",
+      "repoOwner": "ziplineci",
+      "repoName": "zipline-cloudflare-dns",
       "repoBranch": "main",
       "repoRevision": "b9a98cc0147565bfb0da0de14ed592d6d51ee602",
       "buildVersion": "1.2.11-main-143",
@@ -981,7 +981,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "estafette-controllers"
+          "value": "zipline-controllers"
         },
         {
           "key": "language",
@@ -989,7 +989,7 @@
         },
         {
           "key": "team",
-          "value": "estafette-team"
+          "value": "zipline-team"
         },
         {
           "key": "type",
@@ -1004,20 +1004,20 @@
               "name": "release",
               "id": "611917160581988362",
               "repoSource": "github.com",
-              "repoOwner": "estafette",
-              "repoName": "estafette-cloudflare-dns",
+              "repoOwner": "ziplineci",
+              "repoName": "zipline-cloudflare-dns",
               "releaseVersion": "1.2.10",
               "releaseStatus": "succeeded",
               "triggerEvents": [
                 {
                   "manual": {
-                    "userID": "me@estafette.io"
+                    "userID": "me@zipline.io"
                   }
                 }
               ],
-              "insertedAt": "2020-12-01T08:51:37.540541Z",
-              "startedAt": "2020-12-01T08:51:38.643997Z",
-              "updatedAt": "2020-12-01T08:52:13.700552Z",
+              "insertedAt": "2024-12-01T08:51:37.540541Z",
+              "startedAt": "2024-12-01T08:51:38.643997Z",
+              "updatedAt": "2024-12-01T08:52:13.700552Z",
               "duration": 35000000000,
               "pendingDuration": 1000000000,
               "extraInfo": {
@@ -1032,7 +1032,7 @@
         {
           "message": "bump version to 1.2.11",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@zipline.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -1042,17 +1042,17 @@
         {
           "git": {
             "event": "push",
-            "repository": "github.com/estafette/estafette-cloudflare-dns",
+            "repository": "github.com/zipline/zipline-cloudflare-dns",
             "branch": "main"
           }
         }
       ],
-      "insertedAt": "2020-12-01T08:48:27.522537Z",
-      "startedAt": "2020-12-01T08:48:32.177754Z",
-      "updatedAt": "2020-12-01T08:51:15.432193Z",
+      "insertedAt": "2024-12-01T08:48:27.522537Z",
+      "startedAt": "2024-12-01T08:48:32.177754Z",
+      "updatedAt": "2024-12-01T08:51:15.432193Z",
       "duration": 163000000000,
       "pendingDuration": 4000000000,
-      "lastUpdatedAt": "2020-12-01T08:52:13.700552Z",
+      "lastUpdatedAt": "2024-12-01T08:52:13.700552Z",
       "extraInfo": {
         "medianPendingDuration": 2000000000,
         "medianDuration": 178000000000
@@ -1060,7 +1060,7 @@
       "groups": [
         {
           "id": "568087204531535884",
-          "name": "Estafette"
+          "name": "zipline"
         }
       ],
       "organizations": [
@@ -1073,8 +1073,8 @@
     {
       "id": "657200275663814672",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-letsencrypt-certificate",
+      "repoOwner": "ziplineci",
+      "repoName": "zipline-letsencrypt-certificate",
       "repoBranch": "main",
       "repoRevision": "bd4d0f3f88f71a93f38a6602d3c42f434957ad25",
       "buildVersion": "1.2.11-main-224",
@@ -1082,7 +1082,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "estafette-controllers"
+          "value": "zipline-controllers"
         },
         {
           "key": "language",
@@ -1090,7 +1090,7 @@
         },
         {
           "key": "team",
-          "value": "estafette-team"
+          "value": "zipline-team"
         },
         {
           "key": "type",
@@ -1105,21 +1105,21 @@
               "name": "release",
               "id": "657201968156409872",
               "repoSource": "github.com",
-              "repoOwner": "estafette",
-              "repoName": "estafette-letsencrypt-certificate",
+              "repoOwner": "ziplineci",
+              "repoName": "zipline-letsencrypt-certificate",
               "releaseVersion": "1.2.10",
               "releaseStatus": "succeeded",
               "triggerEvents": [
                 {
                   "fired": true,
                   "manual": {
-                    "userID": "me@estafette.io"
+                    "userID": "me@zipline.io"
                   }
                 }
               ],
-              "insertedAt": "2021-05-10T07:42:04.070833Z",
-              "startedAt": "2021-05-10T07:42:05.537383Z",
-              "updatedAt": "2021-05-10T07:42:35.861327Z",
+              "insertedAt": "2025-01-01T07:42:04.070833Z",
+              "startedAt": "2025-01-01T07:42:05.537383Z",
+              "updatedAt": "2025-01-01T07:42:35.861327Z",
               "duration": 30000000000,
               "pendingDuration": 1000000000,
               "extraInfo": {
@@ -1134,7 +1134,7 @@
         {
           "message": "bump version to 1.2.11",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@zipline.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -1145,17 +1145,17 @@
           "fired": true,
           "git": {
             "event": "push",
-            "repository": "github.com/estafette/estafette-letsencrypt-certificate",
+            "repository": "github.com/zipline/zipline-letsencrypt-certificate",
             "branch": "main"
           }
         }
       ],
-      "insertedAt": "2021-05-10T07:33:27.563039Z",
-      "startedAt": "2021-05-10T07:33:29.166605Z",
-      "updatedAt": "2021-05-10T07:36:36.584113Z",
+      "insertedAt": "2025-01-01T07:33:27.563039Z",
+      "startedAt": "2025-01-01T07:33:29.166605Z",
+      "updatedAt": "2025-01-01T07:36:36.584113Z",
       "duration": 187000000000,
       "pendingDuration": 1000000000,
-      "lastUpdatedAt": "2021-05-10T07:42:35.861327Z",
+      "lastUpdatedAt": "2025-01-01T07:42:35.861327Z",
       "extraInfo": {
         "medianPendingDuration": 1000000000,
         "medianDuration": 195000000000
@@ -1163,7 +1163,7 @@
       "groups": [
         {
           "id": "568087204531535884",
-          "name": "Estafette"
+          "name": "zipline"
         }
       ],
       "organizations": [

@@ -28,5 +28,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import 'assets/css/estafette.scss';
+@import 'assets/css/ziplineci.scss';
 </style>

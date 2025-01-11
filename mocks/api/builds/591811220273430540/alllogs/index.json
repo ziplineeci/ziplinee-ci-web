@@ -3,10 +3,10 @@
   {
     "id": "613987767736467467",
     "repoSource": "github.com",
-    "repoOwner": "estafette",
-    "repoName": "estafette-ci-api",
+    "repoOwner": "zipline",
+    "repoName": "zipline-ci-api",
     "repoBranch": "split-template-path",
-    "repoRevision": "d09e6847a21156ca734c53251b99ebf881cbae9a",  
+    "repoRevision": "d09e6847a21156ca734c53251b99ebf881cbae9a",
     "buildID": "591024269951959050",
     "steps": null,
     "insertedAt": "2020-12-08T16:23:12.696402Z"
@@ -14,10 +14,10 @@
   {
     "id": "613987767736467468",
     "repoSource": "github.com",
-    "repoOwner": "estafette",
-    "repoName": "estafette-ci-api",
+    "repoOwner": "zipline",
+    "repoName": "zipline-ci-api",
     "repoBranch": "split-template-path",
-    "repoRevision": "d09e6847a21156ca734c53251b99ebf881cbae9a",  
+    "repoRevision": "d09e6847a21156ca734c53251b99ebf881cbae9a",
     "buildID": "591024269951959050",
     "steps": null,
     "insertedAt": "2020-12-08T16:23:16.696402Z"

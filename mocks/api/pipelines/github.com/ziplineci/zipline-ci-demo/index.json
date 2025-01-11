@@ -1,0 +1,66 @@
+{
+  "id": "665120071639400465",
+  "repoSource": "github.com",
+  "repoOwner": "ziplineci",
+  "repoName": "ziplineci-demo",
+  "repoBranch": "main",
+  "repoRevision": "96e910ce80a9caee99f9cde2dc46dcc66f2a840e",
+  "buildVersion": "0.0.48",
+  "buildStatus": "running",
+  "labels": [
+    {
+      "key": "app-group",
+      "value": "ziplineci"
+    },
+    {
+      "key": "language",
+      "value": "golang"
+    },
+    {
+      "key": "team",
+      "value": "ziplineteam"
+    }
+  ],
+  "commits": [
+    {
+      "message": "fetch pipeline bots",
+      "author": {
+        "email": "me@zipline.io",
+        "name": "Just Me",
+        "username": "JustMe"
+      }
+    }
+  ],
+  "triggerEvents": [
+    {
+      "fired": true,
+      "git": {
+        "event": "push",
+        "repository": "github.com/ziplineci/zipline-demo",
+        "branch": "main"
+      }
+    }
+  ],
+  "insertedAt": "2025-01-07T06:55:37.487067Z",
+  "startedAt": "2025-01-07T06:56:47.547531Z",
+  "updatedAt": "2025-01-07T06:56:47.547531Z",
+  "duration": 0,
+  "pendingDuration": 70000000000,
+  "lastUpdatedAt": "2025-01-07T06:56:47.547531Z",
+  "extraInfo": {
+    "medianPendingDuration": 1000000000,
+    "medianDuration": 53000000000
+  },
+  "groups": [
+    {
+      "id": "568087204531535884",
+      "name": "ZiplineCI"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "568393673343696906",
+      "name": "ZiplineCI"
+    }
+  ]
+}

@@ -13,7 +13,7 @@
         class="sidebar-icon"
       />
       <span>
-        Estafette
+        ZiplineCI
       </span>
     </b-nav-item>
     <b-nav-item

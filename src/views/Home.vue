@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-jumbotron
-      header="Estafette"
+      header="ZiplineCI"
       bg-variant="dark"
       text-variant="success"
       header-level="4"
