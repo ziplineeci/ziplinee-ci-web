@@ -13,7 +13,7 @@
   "groups": [
     {
       "id": "56808720",
-      "name": "Estafette"
+      "name": "Zipline"
     },
     {
       "id": "56803499",
@@ -23,16 +23,16 @@
   "organizations": [
     {
       "id": "5680300",
-      "name": "Estafette"
+      "name": "Zipline"
     }
   ],
   "roles": [
     "administrator"
   ],
-  "firstVisit": "2020-05-27T15:51:48.790109Z",
-  "lastVisit": "2020-07-01T13:24:14.582722104Z",
+  "firstVisit": "2025-01-01T15:51:48.790109Z",
+  "lastVisit": "2025-01-01T13:24:14.582722104Z",
   "currentProvider": "google",
-  "currentOrganization": "Estafette",
+  "currentOrganization": "Zipline",
   "email":"someone@server.com",
   "name":"Someone Special"
 }

@@ -1,16 +1,16 @@
 {
-  "name": "tooling-estafette",
+  "name": "tooling-zipline",
   "action": "deploy-canary",
   "id": "591040541628465162",
   "repoSource": "github.com",
-  "repoOwner": "estafette",
-  "repoName": "estafette-ci-api",
+  "repoOwner": "zipline",
+  "repoName": "zipline-ci-api",
   "releaseVersion": "0.1.1471",
   "releaseStatus": "succeeded",
   "triggerEvents": [
     {
       "manual": {
-        "userID": "me@estafette.io"
+        "userID": "me@zipline.io"
       }
     }
   ],
