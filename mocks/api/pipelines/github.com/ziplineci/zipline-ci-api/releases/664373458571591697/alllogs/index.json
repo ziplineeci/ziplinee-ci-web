@@ -3,8 +3,8 @@
     {
       "id": "664373708282167314",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-api",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-api",
       "releaseID": "664373458571591697",
       "steps": null,
       "insertedAt": "2021-06-04T15:39:25.466474Z"
