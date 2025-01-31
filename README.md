@@ -1,6 +1,6 @@
 # Zipline CI
 
-The `estafette-ci-web` component is part of the Estafette CI system documented at https://estafette.io.
+The `ziplinee-ci-web` component is part of the Estafette CI system documented at https://ziplinee-docs.malsharaji.com.
 
 Please file any issues related to Estafette CI at https://github.com/estafette/estafette-ci/issues
 
