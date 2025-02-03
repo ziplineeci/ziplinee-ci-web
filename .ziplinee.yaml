@@ -3,7 +3,7 @@ builder:
 
 labels:
   type: web
-  app-group: zipline-ci
+  app-group: ziplinee-ci
   team: zipline-team
   language: nodejs
 
