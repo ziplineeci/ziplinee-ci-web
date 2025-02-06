@@ -4,7 +4,7 @@ builder:
 labels:
   type: web
   app-group: ziplinee-ci
-  team: zipline-team
+  team: ziplinee-team
   language: nodejs
 
 version:
@@ -21,7 +21,7 @@ stages:
         action: audit
         level: low
         dev-level: critical
-        workspace: estafette
+        workspace: ziplinee
         channels:
         - '#npm-audit'
 
@@ -63,8 +63,8 @@ stages:
 
   test:
     services:
-    - name: ci.estafette.io
-      image: ziplineeci/estafette-ci-web:${ESTAFETTE_BUILD_VERSION}
+    - name: ci.ziplineeci.io
+      image: ziplineeci/ziplinee-ci-web:${ZIPLINEE_BUILD_VERSION}
       readiness:
         path: /robots.txt
         port: 5000
@@ -74,26 +74,25 @@ stages:
       npm_config_update-notifier: false
     commands:
     - apk add curl
-    - curl --fail http://ci.estafette.io:5000/manifest/encrypt
+    - curl --fail http://ci.ziplineeci.io:5000/manifest/encrypt
 
   push-to-docker-hub:
     image: extensions/docker:dev
     retries: 5
     action: push
     repositories:
-    - estafette
+    - ziplineeci
 
   tag-revision:
     image: bitnami/git
     commands:
-    - git tag ${ESTAFETTE_BUILD_VERSION}
-    - git push origin ${ESTAFETTE_BUILD_VERSION}
-    when: status == 'succeeded' &&
-      branch == 'main'
+    - git tag ${ZIPLINEE_BUILD_VERSION}
+    - git push origin ${ZIPLINEE_BUILD_VERSION}
+    when: status == 'succeeded' && branch == 'main'
 
 #  slack-notify:
 #    image: extensions/slack-build-status:dev
-#    workspace: estafette
+#    workspace: ziplinee
 #    channels:
 #    - '#build-status'
 #    when:

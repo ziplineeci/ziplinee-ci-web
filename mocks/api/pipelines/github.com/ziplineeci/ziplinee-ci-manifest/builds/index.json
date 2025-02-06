@@ -1,0 +1,675 @@
+{
+  "items": [
+    {
+      "id": "663226580904869905",
+      "repoSource": "github.com",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-manifest",
+      "repoBranch": "main",
+      "repoRevision": "ec9991f012f1ec7c5a06f5dbcd695fe9acac4633",
+      "buildVersion": "0.1.190",
+      "buildStatus": "succeeded",
+      "labels": [
+        {
+          "key": "app-group",
+          "value": "ziplinee-ci"
+        },
+        {
+          "key": "language",
+          "value": "golang"
+        },
+        {
+          "key": "team",
+          "value": "ziplineeci"
+        },
+        {
+          "key": "type",
+          "value": "library"
+        }
+      ],
+      "commits": [
+        {
+          "message": "add bots definition to manifest to act on any github or bitbucket event",
+          "author": {
+            "email": "me@ziplineeci.io",
+            "name": "Just Me",
+            "username": "JustMe"
+          }
+        },
+        {
+          "message": "add builder, clone and triggers to bots",
+          "author": {
+            "email": "me@ziplineeci.io",
+            "name": "Just Me",
+            "username": "JustMe"
+          }
+        },
+        {
+          "message": "add bitbucket and github triggers instead of events property on bots to reuse trigger system",
+          "author": {
+            "email": "me@ziplineeci.io",
+            "name": "Just Me",
+            "username": "JustMe"
+          }
+        },
+        {
+          "message": "match github and bitbucket events on repository by default if the event is repo specific",
+          "author": {
+            "email": "me@ziplineeci.io",
+            "name": "Just Me",
+            "username": "JustMe"
+          }
+        },
+        {
+          "message": "set bot on botaction to trigger correct bot",
+          "author": {
+            "email": "me@ziplineeci.io",
+            "name": "Just Me",
+            "username": "JustMe"
+          }
+        },
+        {
+          "message": "add event body property to bitbucket/github events",
+          "author": {
+            "email": "me@ziplineeci.io",
+            "name": "Just Me",
+            "username": "JustMe"
+          }
+        }
+      ],
+      "triggerEvents": [
+        {
+          "fired": true,
+          "git": {
+            "event": "push",
+            "repository": "github.com/ziplineeci/ziplinee-ci-manifest",
+            "branch": "main"
+          }
+        }
+      ],
+      "insertedAt": "2021-05-31T14:24:49.972942Z",
+      "startedAt": "2021-05-31T14:25:03.378744Z",
+      "updatedAt": "2021-05-31T14:25:39.835556Z",
+      "duration": 36000000000,
+      "pendingDuration": 13000000000,
+      "organizations": [
+        {
+          "name": "Ziplinee"
+        }
+      ]
+    },
+    {
+      "id": "663224188175548433",
+      "repoSource": "github.com",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-manifest",
+      "repoBranch": "bots-support",
+      "repoRevision": "279e0cbd69d363359b8721488217433dab4d24a4",
+      "buildVersion": "0.1.189-bots-support",
+      "buildStatus": "succeeded",
+      "labels": [
+        {
+          "key": "app-group",
+          "value": "ziplinee-ci"
+        },
+        {
+          "key": "language",
+          "value": "golang"
+        },
+        {
+          "key": "team",
+          "value": "ziplineeci"
+        },
+        {
+          "key": "type",
+          "value": "library"
+        }
+      ],
+      "commits": [
+        {
+          "message": "add event body property to bitbucket/github events",
+          "author": {
+            "email": "me@ziplineeci.io",
+            "name": "Just Me",
+            "username": "JustMe"
+          }
+        }
+      ],
+      "triggerEvents": [
+        {
+          "fired": true,
+          "manual": {
+            "userID": "me@ziplineeci.io"
+          }
+        }
+      ],
+      "insertedAt": "2021-05-31T14:12:39.769912Z",
+      "startedAt": "2021-05-31T14:12:42.688292Z",
+      "updatedAt": "2021-05-31T14:13:23.278966Z",
+      "duration": 40000000000,
+      "pendingDuration": 2000000000,
+      "organizations": [
+        {
+          "name": "Ziplinee"
+        }
+      ]
+    },
+    {
+      "id": "663223956464828433",
+      "repoSource": "github.com",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-manifest",
+      "repoBranch": "bots-support",
+      "repoRevision": "279e0cbd69d363359b8721488217433dab4d24a4",
+      "buildVersion": "0.1.189-bots-support",
+      "buildStatus": "canceled",
+      "labels": [
+        {
+          "key": "app-group",
+          "value": "ziplinee-ci"
+        },
+        {
+          "key": "language",
+          "value": "golang"
+        },
+        {
+          "key": "team",
+          "value": "ziplineeci"
+        },
+        {
+          "key": "type",
+          "value": "library"
+        }
+      ],
+      "commits": [
+        {
+          "message": "add event body property to bitbucket/github events",
+          "author": {
+            "email": "me@ziplineeci.io",
+            "name": "Just Me",
+            "username": "JustMe"
+          }
+        }
+      ],
+      "triggerEvents": [
+        {
+          "fired": true,
+          "git": {
+            "event": "push",
+            "repository": "github.com/ziplineeci/ziplinee-ci-manifest",
+            "branch": "bots-support"
+          }
+        }
+      ],
+      "insertedAt": "2021-05-31T14:11:29.057411Z",
+      "updatedAt": "2021-05-31T14:12:37.799338Z",
+      "duration": 68000000000,
+      "pendingDuration": 0,
+      "organizations": [
+        {
+          "name": "Ziplinee"
+        }
+      ]
+    },
+    {
+      "id": "663217917078896656",
+      "repoSource": "github.com",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-manifest",
+      "repoBranch": "bots-support",
+      "repoRevision": "2f3b1d81b42134f45cd460f48c420c218e6f6a8d",
+      "buildVersion": "0.1.188-bots-support",
+      "buildStatus": "succeeded",
+      "labels": [
+        {
+          "key": "app-group",
+          "value": "ziplinee-ci"
+        },
+        {
+          "key": "language",
+          "value": "golang"
+        },
+        {
+          "key": "team",
+          "value": "ziplineeci"
+        },
+        {
+          "key": "type",
+          "value": "library"
+        }
+      ],
+      "commits": [
+        {
+          "message": "set bot on botaction to trigger correct bot",
+          "author": {
+            "email": "me@ziplineeci.io",
+            "name": "Just Me",
+            "username": "JustMe"
+          }
+        }
+      ],
+      "triggerEvents": [
+        {
+          "fired": true,
+          "git": {
+            "event": "push",
+            "repository": "github.com/ziplineeci/ziplinee-ci-manifest",
+            "branch": "bots-support"
+          }
+        }
+      ],
+      "insertedAt": "2021-05-31T13:40:45.98315Z",
+      "startedAt": "2021-05-31T13:40:47.751403Z",
+      "updatedAt": "2021-05-31T13:41:24.433652Z",
+      "duration": 36000000000,
+      "pendingDuration": 1000000000,
+      "organizations": [
+        {
+          "name": "Ziplinee"
+        }
+      ]
+    },
+    {
+      "id": "663209306261291024",
+      "repoSource": "github.com",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-manifest",
+      "repoBranch": "bots-support",
+      "repoRevision": "81d12df2afefb0e0b10be366ba3658b0d5d21714",
+      "buildVersion": "0.1.187-bots-support",
+      "buildStatus": "succeeded",
+      "labels": [
+        {
+          "key": "app-group",
+          "value": "ziplinee-ci"
+        },
+        {
+          "key": "language",
+          "value": "golang"
+        },
+        {
+          "key": "team",
+          "value": "ziplineeci"
+        },
+        {
+          "key": "type",
+          "value": "library"
+        }
+      ],
+      "commits": [
+        {
+          "message": "match github and bitbucket events on repository by default if the event is repo specific",
+          "author": {
+            "email": "me@ziplineeci.io",
+            "name": "Just Me",
+            "username": "JustMe"
+          }
+        }
+      ],
+      "triggerEvents": [
+        {
+          "fired": true,
+          "git": {
+            "event": "push",
+            "repository": "github.com/ziplineeci/ziplinee-ci-manifest",
+            "branch": "bots-support"
+          }
+        }
+      ],
+      "insertedAt": "2021-05-31T12:56:58.170269Z",
+      "startedAt": "2021-05-31T12:56:59.950856Z",
+      "updatedAt": "2021-05-31T12:57:35.7192Z",
+      "duration": 35000000000,
+      "pendingDuration": 1000000000,
+      "organizations": [
+        {
+          "name": "Ziplinee"
+        }
+      ]
+    },
+    {
+      "id": "663204767758614546",
+      "repoSource": "github.com",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-manifest",
+      "repoBranch": "bots-support",
+      "repoRevision": "3124f27250003e3a8df42b7e20a4c765ba825b32",
+      "buildVersion": "0.1.186-bots-support",
+      "buildStatus": "succeeded",
+      "labels": [
+        {
+          "key": "app-group",
+          "value": "ziplinee-ci"
+        },
+        {
+          "key": "language",
+          "value": "golang"
+        },
+        {
+          "key": "team",
+          "value": "ziplineeci"
+        },
+        {
+          "key": "type",
+          "value": "library"
+        }
+      ],
+      "commits": [
+        {
+          "message": "add bitbucket and github triggers instead of events property on bots to reuse trigger system",
+          "author": {
+            "email": "me@ziplineeci.io",
+            "name": "Just Me",
+            "username": "JustMe"
+          }
+        }
+      ],
+      "triggerEvents": [
+        {
+          "fired": true,
+          "git": {
+            "event": "push",
+            "repository": "github.com/ziplineeci/ziplinee-ci-manifest",
+            "branch": "bots-support"
+          }
+        }
+      ],
+      "insertedAt": "2021-05-31T12:33:53.129031Z",
+      "startedAt": "2021-05-31T12:33:54.554Z",
+      "updatedAt": "2021-05-31T12:34:30.78287Z",
+      "duration": 36000000000,
+      "pendingDuration": 1000000000,
+      "organizations": [
+        {
+          "name": "Ziplinee"
+        }
+      ]
+    },
+    {
+      "id": "662362793924034576",
+      "repoSource": "github.com",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-manifest",
+      "repoBranch": "bots-support",
+      "repoRevision": "06b7f65fb8848f09a4e16ddcf1bdfe079ac9a413",
+      "buildVersion": "0.1.185-bots-support",
+      "buildStatus": "succeeded",
+      "labels": [
+        {
+          "key": "app-group",
+          "value": "ziplinee-ci"
+        },
+        {
+          "key": "language",
+          "value": "golang"
+        },
+        {
+          "key": "team",
+          "value": "ziplineeci"
+        },
+        {
+          "key": "type",
+          "value": "library"
+        }
+      ],
+      "commits": [
+        {
+          "message": "build with golang 1.13.6",
+          "author": {
+            "email": "me@ziplineeci.io",
+            "name": "Just Me",
+            "username": "JustMe"
+          }
+        },
+        {
+          "message": "build with golang 1.14.0",
+          "author": {
+            "email": "me@ziplineeci.io",
+            "name": "Just Me",
+            "username": "JustMe"
+          }
+        },
+        {
+          "message": "add ZiplineeManifestPreferences to configure manifest validation rules",
+          "author": {
+            "email": "me@ziplineeci.io",
+            "name": "Just Me",
+            "username": "JustMe"
+          }
+        },
+        {
+          "message": "add json annotation to manifest preferences",
+          "author": {
+            "email": "me@ziplineeci.io",
+            "name": "Just Me",
+            "username": "JustMe"
+          }
+        },
+        {
+          "message": "set type to library",
+          "author": {
+            "email": "me@ziplineeci.io",
+            "name": "Just Me",
+            "username": "JustMe"
+          }
+        },
+        {
+          "message": "add archived property",
+          "author": {
+            "email": "me@ziplineeci.io",
+            "name": "Just Me",
+            "username": "JustMe"
+          }
+        }
+      ],
+      "triggerEvents": [
+        {
+          "fired": true,
+          "git": {
+            "event": "push",
+            "repository": "github.com/ziplineeci/ziplinee-ci-manifest",
+            "branch": "bots-support"
+          }
+        }
+      ],
+      "insertedAt": "2021-05-28T13:11:23.10557Z",
+      "startedAt": "2021-05-28T13:11:25.085086Z",
+      "updatedAt": "2021-05-28T13:11:59.219362Z",
+      "duration": 34000000000,
+      "pendingDuration": 1000000000,
+      "organizations": [
+        {
+          "name": "Ziplinee"
+        }
+      ]
+    },
+    {
+      "id": "657568525105037328",
+      "repoSource": "github.com",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-manifest",
+      "repoBranch": "main",
+      "repoRevision": "736230b0e866c613ee44c542663b123958c914d7",
+      "buildVersion": "0.1.184",
+      "buildStatus": "succeeded",
+      "labels": [
+        {
+          "key": "app-group",
+          "value": "ziplinee-ci"
+        },
+        {
+          "key": "language",
+          "value": "golang"
+        },
+        {
+          "key": "team",
+          "value": "ziplineeci"
+        },
+        {
+          "key": "type",
+          "value": "library"
+        }
+      ],
+      "commits": [
+        {
+          "message": "treat release branches as regular expressions",
+          "author": {
+            "email": "me@ziplineeci.io",
+            "name": "Just Me",
+            "username": "JustMe"
+          }
+        },
+        {
+          "message": "Merge pull request #9 from ziplineeci/release-branch-regex-support\n\ntreat release branches as regular expressions",
+          "author": {
+            "email": "me@ziplineeci.io",
+            "name": "Just Me",
+            "username": "JustMe"
+          }
+        }
+      ],
+      "triggerEvents": [
+        {
+          "fired": true,
+          "git": {
+            "event": "push",
+            "repository": "github.com/ziplineeci/ziplinee-ci-manifest",
+            "branch": "main"
+          }
+        }
+      ],
+      "insertedAt": "2021-05-11T14:46:28.373897Z",
+      "startedAt": "2021-05-11T14:46:36.942315Z",
+      "updatedAt": "2021-05-11T14:47:18.037237Z",
+      "duration": 41000000000,
+      "pendingDuration": 8000000000,
+      "organizations": [
+        {
+          "name": "Ziplinee"
+        }
+      ]
+    },
+    {
+      "id": "657551984626335761",
+      "repoSource": "github.com",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-manifest",
+      "repoBranch": "release-branch-regex-support",
+      "repoRevision": "c9c97e3b6152142277063bb9092e5fd346debe61",
+      "buildVersion": "0.1.183-release-branch-regex-support",
+      "buildStatus": "succeeded",
+      "labels": [
+        {
+          "key": "app-group",
+          "value": "ziplinee-ci"
+        },
+        {
+          "key": "language",
+          "value": "golang"
+        },
+        {
+          "key": "team",
+          "value": "ziplineeci"
+        },
+        {
+          "key": "type",
+          "value": "library"
+        }
+      ],
+      "commits": [
+        {
+          "message": "treat release branches as regular expressions",
+          "author": {
+            "email": "me@ziplineeci.io",
+            "name": "Just Me",
+            "username": "JustMe"
+          }
+        }
+      ],
+      "triggerEvents": [
+        {
+          "fired": true,
+          "git": {
+            "event": "push",
+            "repository": "github.com/ziplineeci/ziplinee-ci-manifest",
+            "branch": "release-branch-regex-support"
+          }
+        }
+      ],
+      "insertedAt": "2021-05-11T13:22:20.620476Z",
+      "startedAt": "2021-05-11T13:22:29.22457Z",
+      "updatedAt": "2021-05-11T13:23:05.280717Z",
+      "duration": 36000000000,
+      "pendingDuration": 8000000000,
+      "organizations": [
+        {
+          "name": "Ziplinee"
+        }
+      ]
+    },
+    {
+      "id": "652145005044924433",
+      "repoSource": "github.com",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-manifest",
+      "repoBranch": "main",
+      "repoRevision": "75063c0da769c7acdc35616fa2bc8a8632841c06",
+      "buildVersion": "0.1.182",
+      "buildStatus": "succeeded",
+      "labels": [
+        {
+          "key": "app-group",
+          "value": "ziplinee-ci"
+        },
+        {
+          "key": "language",
+          "value": "golang"
+        },
+        {
+          "key": "team",
+          "value": "ziplineeci"
+        },
+        {
+          "key": "type",
+          "value": "library"
+        }
+      ],
+      "commits": [
+        {
+          "message": "add builder.type to test with kubernetes resources instead of docker containers",
+          "author": {
+            "email": "me@ziplineeci.io",
+            "name": "Just Me",
+            "username": "JustMe"
+          }
+        }
+      ],
+      "triggerEvents": [
+        {
+          "fired": true,
+          "git": {
+            "event": "push",
+            "repository": "github.com/ziplineeci/ziplinee-ci-manifest",
+            "branch": "main"
+          }
+        }
+      ],
+      "insertedAt": "2021-04-22T11:01:01.402371Z",
+      "startedAt": "2021-04-22T11:01:10.98756Z",
+      "updatedAt": "2021-04-22T11:01:54.679093Z",
+      "duration": 43000000000,
+      "pendingDuration": 9000000000,
+      "organizations": [
+        {
+          "name": "Ziplinee"
+        }
+      ]
+    }
+  ],
+  "pagination": {
+    "page": 1,
+    "size": 10,
+    "totalPages": 1,
+    "totalItems": 10
+  }
+}

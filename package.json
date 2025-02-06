@@ -1,8 +1,8 @@
 {
-  "name": "estafette-ci-web",
+  "name": "ziplinee-ci-web",
   "version": "1.0.0",
-  "description": "The web frontend for Estafette CI",
-  "author": "Jorrit Salverda",
+  "description": "The web frontend for Ziplinee CI",
+  "author": "Shadi Sharbaji",
   "private": true,
   "scripts": {
     "dev": "webpack serve --progress --config webpack/webpack.dev.js",

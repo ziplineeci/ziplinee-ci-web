@@ -1,16 +1,16 @@
 {
-  "name": "tooling-estafette",
+  "name": "tooling-ziplinee",
   "action": "deploy-stable",
   "id": "592650992061874186",
   "repoSource": "github.com",
-  "repoOwner": "estafette",
-  "repoName": "estafette-ci-api",
+  "repoOwner": "ziplineeci",
+  "repoName": "ziplinee-ci-api",
   "releaseVersion": "0.1.1479",
   "releaseStatus": "succeeded",
   "triggerEvents": [
     {
       "manual": {
-        "userID": "me@estafette.io"
+        "userID": "me@ziplinee.io"
       }
     }
   ],

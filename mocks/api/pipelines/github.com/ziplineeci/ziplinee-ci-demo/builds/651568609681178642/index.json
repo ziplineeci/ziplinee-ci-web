@@ -1,0 +1,56 @@
+{
+  "id": "651568609681178642",
+  "repoSource": "github.com",
+  "repoOwner": "ziplineeci",
+  "repoName": "ziplinee-ci-demo",
+  "repoBranch": "main",
+  "repoRevision": "56f62bdaa0b00e06b029620ccc39f40d1c4ff894",
+  "buildVersion": "0.0.46",
+  "buildStatus": "succeeded",
+  "labels": [
+    {
+      "key": "app-group",
+      "value": "ziplinee-ci"
+    },
+    {
+      "key": "language",
+      "value": "golang"
+    },
+    {
+      "key": "team",
+      "value": "ziplinee-team"
+    }
+  ],
+  "manifest": "labels:\n  app-group: ziplinee-ci\n  team: ziplinee-team\n  language: golang\n\nversion:\n  semver:\n    major: 0\n    minor: 0\n\nstages:\n  build:\n    image: golang:1.16-alpine\n    env:\n      CGO_ENABLED: 0\n      GOOS: linux\n      API_BASE_URL: ***\n      CLIENT_ID: ***\n      CLIENT_SECRET: ***\n    commands:\n    - go test ./...\n    - go build -a -installsuffix cgo -ldflags \"-X main.appgroup=${ZIPLINEE_LABEL_APP_GROUP} -X main.app=${ZIPLINEE_GIT_NAME} -X main.version=${ZIPLINEE_BUILD_VERSION} -X main.revision=${ZIPLINEE_GIT_REVISION} -X main.branch=${ZIPLINEE_GIT_BRANCH} -X main.buildDate=${ZIPLINEE_BUILD_DATETIME}\" -o ./${ZIPLINEE_GIT_NAME} .\n\n  extract-data:\n    image: golang:1.16-alpine\n    env:\n      CGO_ENABLED: 0\n      GOOS: linux\n      API_BASE_URL: ***\n      CLIENT_ID: ***\n      CLIENT_SECRET: ***\n      PIPELINES_TO_EXTRACT: github.com/ziplineeci/ziplinee-ci-api,github.com/ziplineeci/ziplinee-ci-builder,github.com/ziplineeci/ziplinee-ci-contracts,github.com/ziplineeci/ziplinee-ci-crypt,github.com/ziplineeci/ziplinee-ci-demo,github.com/ziplineeci/ziplinee-ci-manifest,github.com/ziplineeci/ziplinee-ci-web,github.com/ziplineeci/ziplinee-cloudflare-dns,github.com/ziplineeci/ziplinee-letsencrypt-certificate\n      LOG_OBFUSCATE_REGEX: ***\n      ZIPLINEE_LOG_FORMAT: console\n    commands:\n    - ./${ZIPLINEE_GIT_NAME}\n\n  git-clone-web:\n    image: extensions/git-clone:dev\n    repo: ziplinee-ci-web\n    branch: main\n\n  copy-mock-data:\n    image: golang:1.16-alpine\n    env:\n      GIT_USER_EMAIL: ***\n      GIT_USER_NAME: ***\n    commands:\n    - rm -rf ziplinee-ci-web/mocks/api/pipelines\n    - cp -r mocks/api/pipelines ziplinee-ci-web/mocks/api\n    - apk add git\n    - cd ziplinee-ci-web\n    - git config --global user.email \"${GIT_USER_EMAIL}\"\n    - git config --global user.name \"${GIT_USER_NAME}\"\n    - git add --all \u0026\u0026 git commit --allow-empty -m \"ziplinee-ci-demo ${ZIPLINEE_BUILD_VERSION}\"\n    - git push origin main\n",
+  "manifestWithDefaults": "builder:\n  track: stable\n  os: linux\n  type: docker\nlabels:\n  app-group: ziplinee-ci\n  language: golang\n  team: ziplinee-team\nversion:\n  semver:\n    major: 0\n    minor: 0\n    patch: '{{auto}}'\n    labelTemplate: '{{branch}}'\n    releaseBranch:\n    - master\n    - main\nstages:\n  build:\n    image: golang:1.16-alpine\n    shell: /bin/sh\n    workDir: /ziplinee-work\n    commands:\n    - go test ./...\n    - go build -a -installsuffix cgo -ldflags \"-X main.appgroup=${ZIPLINEE_LABEL_APP_GROUP}\n      -X main.app=${ZIPLINEE_GIT_NAME} -X main.version=${ZIPLINEE_BUILD_VERSION}\n      -X main.revision=${ZIPLINEE_GIT_REVISION} -X main.branch=${ZIPLINEE_GIT_BRANCH}\n      -X main.buildDate=${ZIPLINEE_BUILD_DATETIME}\" -o ./${ZIPLINEE_GIT_NAME} .\n    when: status == 'succeeded'\n    env:\n      API_BASE_URL: ***\n      CGO_ENABLED: \"0\"\n      CLIENT_ID: ***\n      CLIENT_SECRET: ***\n      GOOS: linux\n  extract-data:\n    image: golang:1.16-alpine\n    shell: /bin/sh\n    workDir: /ziplinee-work\n    commands:\n    - ./${ZIPLINEE_GIT_NAME}\n    when: status == 'succeeded'\n    env:\n      API_BASE_URL: ***\n      CGO_ENABLED: \"0\"\n      CLIENT_ID: ***\n      CLIENT_SECRET: ***\n      ZIPLINEE_LOG_FORMAT: console\n      GOOS: linux\n      LOG_OBFUSCATE_REGEX: ***\n      PIPELINES_TO_EXTRACT: github.com/ziplineeci/ziplinee-ci-api,github.com/ziplineeci/ziplinee-ci-builder,github.com/ziplineeci/ziplinee-ci-contracts,github.com/ziplineeci/ziplinee-ci-crypt,github.com/ziplineeci/ziplinee-ci-demo,github.com/ziplineeci/ziplinee-ci-manifest,github.com/ziplineeci/ziplinee-ci-web,github.com/ziplineeci/ziplinee-cloudflare-dns,github.com/ziplineeci/ziplinee-letsencrypt-certificate\n  git-clone-web:\n    image: extensions/git-clone:dev\n    shell: /bin/sh\n    workDir: /ziplinee-work\n    when: status == 'succeeded'\n    branch: main\n    repo: ziplinee-ci-web\n  copy-mock-data:\n    image: golang:1.16-alpine\n    shell: /bin/sh\n    workDir: /ziplinee-work\n    commands:\n    - rm -rf ziplinee-ci-web/mocks/api/pipelines\n    - cp -r mocks/api/pipelines ziplinee-ci-web/mocks/api\n    - apk add git\n    - cd ziplinee-ci-web\n    - git config --global user.email \"${GIT_USER_EMAIL}\"\n    - git config --global user.name \"${GIT_USER_NAME}\"\n    - git add --all \u0026\u0026 git commit --allow-empty -m \"ziplinee-ci-demo ${ZIPLINEE_BUILD_VERSION}\"\n    - git push origin main\n    when: status == 'succeeded'\n    env:\n      GIT_USER_EMAIL: ***\n      GIT_USER_NAME: ***\n",
+  "commits": [
+    {
+      "message": "fetch logs from logsbyid path",
+      "author": {
+        "email": "me@ziplineeci.io",
+        "name": "Just Me",
+        "username": "JustMe"
+      }
+    }
+  ],
+  "triggerEvents": [
+    {
+      "fired": true,
+      "git": {
+        "event": "push",
+        "repository": "github.com/ziplineeci/ziplinee-ci-demo",
+        "branch": "main"
+      }
+    }
+  ],
+  "insertedAt": "2021-04-20T10:09:19.497097Z",
+  "startedAt": "2021-04-20T10:09:21.394057Z",
+  "updatedAt": "2021-04-20T10:10:15.221099Z",
+  "duration": 53000000000,
+  "pendingDuration": 1000000000,
+  "organizations": [
+    {
+      "name": "Ziplinee"
+    }
+  ]
+}

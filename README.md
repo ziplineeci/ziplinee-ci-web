@@ -1,12 +1,12 @@
 # Zipline CI
 
-The `ziplinee-ci-web` component is part of the Estafette CI system documented at https://ziplinee-docs.malsharaji.com.
+The `ziplinee-ci-web` component is part of the Ziplinee CI system documented at https://ziplinee.io.
 
-Please file any issues related to Estafette CI at https://github.com/estafette/estafette-ci/issues
+Please file any issues related to Ziplinee CI at https://github.com/ziplineeci/ziplinee-ci/issues
 
 ## ziplinee-ci-web
 
-This is the web interface for the Estafette CI system. It's built using Vue.js, Webpack and Bootstrap CSS.
+This is the web interface for the Ziplinee CI system. It's built using Vue.js, Webpack and Bootstrap CSS.
 
 ## Development
 

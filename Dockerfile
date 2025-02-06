@@ -1,7 +1,7 @@
 FROM nginx:1.23-alpine
 
-LABEL maintainer="zipline.io" \
-      description="The zipline-ci-web is the component that renders the ZiplineCI web interface"
+LABEL maintainer="ziplineeci.io" \
+      description="The ziplinee-ci-web is the component that renders the ZiplineeCI web interface"
 
 # fix vulnerabilities
 RUN apk update \

@@ -1,16 +1,16 @@
 {
-  "name": "tooling-zipline",
+  "name": "tooling-ziplinee",
   "action": "deploy-canary",
   "id": "591040541628465162",
   "repoSource": "github.com",
-  "repoOwner": "zipline",
-  "repoName": "zipline-ci-api",
+  "repoOwner": "ziplineeci",
+  "repoName": "ziplinee-ci-api",
   "releaseVersion": "0.1.1471",
   "releaseStatus": "succeeded",
   "triggerEvents": [
     {
       "manual": {
-        "userID": "me@zipline.io"
+        "userID": "me@ziplineeci.io"
       }
     }
   ],

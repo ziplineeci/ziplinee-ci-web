@@ -1,18 +1,18 @@
 {
   "items": [
     {
-      "name": "tooling-estafette",
+      "name": "tooling-ziplinee",
       "action": "deploy-stable",
       "id": "592650992061874186",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-api",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-api",
       "releaseVersion": "0.1.1479",
       "releaseStatus": "succeeded",
       "triggerEvents": [
         {
           "manual": {
-            "userID": "me@estafette.io"
+            "userID": "me@ziplineeci.io"
           }
         }
       ],
@@ -23,18 +23,18 @@
       "pendingDuration": 1000000000
     },
     {
-      "name": "tooling-estafette",
+      "name": "tooling-ziplinee",
       "action": "deploy-canary",
       "id": "592645792065716235",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-api",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-api",
       "releaseVersion": "0.1.1479",
       "releaseStatus": "succeeded",
       "triggerEvents": [
         {
           "manual": {
-            "userID": "me@estafette.io"
+            "userID": "me@ziplineeci.io"
           }
         }
       ],
@@ -45,18 +45,18 @@
       "pendingDuration": 1000000000
     },
     {
-      "name": "tooling-estafette",
+      "name": "tooling-ziplinee",
       "action": "deploy-stable",
       "id": "592453610764828684",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-api",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-api",
       "releaseVersion": "0.1.1478",
       "releaseStatus": "succeeded",
       "triggerEvents": [
         {
           "manual": {
-            "userID": "me@estafette.io"
+            "userID": "me@ziplineeci.io"
           }
         }
       ],
@@ -67,18 +67,18 @@
       "pendingDuration": 5000000000
     },
     {
-      "name": "tooling-estafette",
+      "name": "tooling-ziplinee",
       "action": "deploy-canary",
       "id": "592451648577667082",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-api",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-api",
       "releaseVersion": "0.1.1478",
       "releaseStatus": "succeeded",
       "triggerEvents": [
         {
           "manual": {
-            "userID": "me@estafette.io"
+            "userID": "me@ziplineeci.io"
           }
         }
       ],
@@ -89,18 +89,18 @@
       "pendingDuration": 1000000000
     },
     {
-      "name": "tooling-estafette",
+      "name": "tooling-ziplinee",
       "action": "deploy-stable",
       "id": "591896013878853643",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-api",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-api",
       "releaseVersion": "0.1.1477",
       "releaseStatus": "succeeded",
       "triggerEvents": [
         {
           "manual": {
-            "userID": "me@estafette.io"
+            "userID": "me@ziplineeci.io"
           }
         }
       ],
@@ -111,18 +111,18 @@
       "pendingDuration": 2000000000
     },
     {
-      "name": "tooling-estafette",
+      "name": "tooling-ziplinee",
       "action": "deploy-canary",
       "id": "591895349515419659",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-api",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-api",
       "releaseVersion": "0.1.1477",
       "releaseStatus": "succeeded",
       "triggerEvents": [
         {
           "manual": {
-            "userID": "me@estafette.io"
+            "userID": "me@ziplineeci.io"
           }
         }
       ],
@@ -133,18 +133,18 @@
       "pendingDuration": 1000000000
     },
     {
-      "name": "tooling-estafette",
+      "name": "tooling-ziplinee",
       "action": "deploy-stable",
       "id": "591818561043136522",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-api",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-api",
       "releaseVersion": "0.1.1473",
       "releaseStatus": "succeeded",
       "triggerEvents": [
         {
           "manual": {
-            "userID": "me@estafette.io"
+            "userID": "me@ziplineeci.io"
           }
         }
       ],
@@ -155,18 +155,18 @@
       "pendingDuration": 8000000000
     },
     {
-      "name": "tooling-estafette",
+      "name": "tooling-ziplinee",
       "action": "deploy-canary",
       "id": "591817779820036108",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-api",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-api",
       "releaseVersion": "0.1.1473",
       "releaseStatus": "succeeded",
       "triggerEvents": [
         {
           "manual": {
-            "userID": "me@estafette.io"
+            "userID": "me@ziplineeci.io"
           }
         }
       ],
@@ -177,18 +177,18 @@
       "pendingDuration": 2000000000
     },
     {
-      "name": "tooling-estafette",
+      "name": "tooling-ziplinee",
       "action": "deploy-stable",
       "id": "591041794135195659",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-api",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-api",
       "releaseVersion": "0.1.1471",
       "releaseStatus": "succeeded",
       "triggerEvents": [
         {
           "manual": {
-            "userID": "me@estafette.io"
+            "userID": "me@ziplineeci.io"
           }
         }
       ],
@@ -199,18 +199,18 @@
       "pendingDuration": 2000000000
     },
     {
-      "name": "tooling-estafette",
+      "name": "tooling-ziplinee",
       "action": "deploy-canary",
       "id": "591040541628465162",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-api",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-api",
       "releaseVersion": "0.1.1471",
       "releaseStatus": "succeeded",
       "triggerEvents": [
         {
           "manual": {
-            "userID": "me@estafette.io"
+            "userID": "me@ziplineeci.io"
           }
         }
       ],

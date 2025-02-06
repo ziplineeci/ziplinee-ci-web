@@ -1,0 +1,249 @@
+{
+  "items": [
+    {
+      "name": "release",
+      "id": "657201968156409872",
+      "repoSource": "github.com",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-letsencrypt-certificate",
+      "releaseVersion": "1.2.10",
+      "releaseStatus": "succeeded",
+      "triggerEvents": [
+        {
+          "fired": true,
+          "manual": {
+            "userID": "me@ziplineeci.io"
+          }
+        }
+      ],
+      "insertedAt": "2021-05-10T07:42:04.070833Z",
+      "startedAt": "2021-05-10T07:42:05.537383Z",
+      "updatedAt": "2021-05-10T07:42:35.861327Z",
+      "duration": 30000000000,
+      "pendingDuration": 1000000000,
+      "organizations": [
+        {
+          "name": "Ziplinee"
+        }
+      ]
+    },
+    {
+      "name": "release",
+      "id": "657200732285829138",
+      "repoSource": "github.com",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-letsencrypt-certificate",
+      "releaseVersion": "1.2.10",
+      "releaseStatus": "succeeded",
+      "triggerEvents": [
+        {
+          "fired": true,
+          "manual": {
+            "userID": "me@ziplineeci.io"
+          }
+        }
+      ],
+      "insertedAt": "2021-05-10T07:35:46.9131Z",
+      "startedAt": "2021-05-10T07:35:47.93576Z",
+      "updatedAt": "2021-05-10T07:36:22.072724Z",
+      "duration": 34000000000,
+      "pendingDuration": 1000000000,
+      "organizations": [
+        {
+          "name": "Ziplinee"
+        }
+      ]
+    },
+    {
+      "name": "release",
+      "id": "625516779784241163",
+      "repoSource": "github.com",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-letsencrypt-certificate",
+      "releaseVersion": "1.2.9",
+      "releaseStatus": "succeeded",
+      "triggerEvents": [
+        {
+          "manual": {
+            "userID": "me@ziplineeci.io"
+          }
+        }
+      ],
+      "insertedAt": "2021-01-18T09:42:51.955229Z",
+      "startedAt": "2021-01-18T09:42:54.355695Z",
+      "updatedAt": "2021-01-18T09:43:54.649068Z",
+      "duration": 60000000000,
+      "pendingDuration": 2000000000,
+      "organizations": [
+        {
+          "name": "Ziplinee"
+        }
+      ]
+    },
+    {
+      "name": "release",
+      "id": "625515625139961866",
+      "repoSource": "github.com",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-letsencrypt-certificate",
+      "releaseVersion": "1.2.9-main-220",
+      "releaseStatus": "failed",
+      "triggerEvents": [
+        {
+          "manual": {
+            "userID": "me@ziplineeci.io"
+          }
+        }
+      ],
+      "insertedAt": "2021-01-18T09:36:59.585613Z",
+      "startedAt": "2021-01-18T09:37:01.527906Z",
+      "updatedAt": "2021-01-18T09:37:49.121833Z",
+      "duration": 47000000000,
+      "pendingDuration": 1000000000,
+      "organizations": [
+        {
+          "name": "Ziplinee"
+        }
+      ]
+    },
+    {
+      "name": "release",
+      "id": "611919274243817484",
+      "repoSource": "github.com",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-letsencrypt-certificate",
+      "releaseVersion": "1.2.8",
+      "releaseStatus": "succeeded",
+      "triggerEvents": [
+        {
+          "manual": {
+            "userID": "me@ziplineeci.io"
+          }
+        }
+      ],
+      "insertedAt": "2020-12-01T09:02:22.578828Z",
+      "startedAt": "2020-12-01T09:02:26.096518Z",
+      "updatedAt": "2020-12-01T09:02:59.662003Z",
+      "duration": 33000000000,
+      "pendingDuration": 3000000000,
+      "organizations": [
+        {
+          "name": "Ziplinee"
+        }
+      ]
+    },
+    {
+      "name": "release",
+      "id": "603708064271269898",
+      "repoSource": "github.com",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-letsencrypt-certificate",
+      "releaseVersion": "1.2.7",
+      "releaseStatus": "succeeded",
+      "triggerEvents": [
+        {
+          "manual": {
+            "userID": "me@ziplineeci.io"
+          }
+        }
+      ],
+      "insertedAt": "2020-11-02T08:58:00.160635Z",
+      "startedAt": "2020-11-02T08:58:02.083091Z",
+      "updatedAt": "2020-11-02T08:58:40.635901Z",
+      "duration": 38000000000,
+      "pendingDuration": 1000000000,
+      "organizations": [
+        {
+          "name": "Ziplinee"
+        }
+      ]
+    },
+    {
+      "name": "release",
+      "id": "567201876814495756",
+      "repoSource": "github.com",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-letsencrypt-certificate",
+      "releaseVersion": "1.2.6",
+      "releaseStatus": "succeeded",
+      "triggerEvents": [
+        {
+          "manual": {
+            "userID": "me@ziplineeci.io"
+          }
+        }
+      ],
+      "insertedAt": "2020-06-26T10:17:55.883089Z",
+      "startedAt": "2020-06-26T10:17:58.216387Z",
+      "updatedAt": "2020-06-26T10:18:30.980314Z",
+      "duration": 32000000000,
+      "pendingDuration": 2000000000
+    },
+    {
+      "name": "release",
+      "id": "525595663326806021",
+      "repoSource": "github.com",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-letsencrypt-certificate",
+      "releaseVersion": "1.2.5",
+      "releaseStatus": "succeeded",
+      "triggerEvents": [
+        {
+          "manual": {
+            "userID": "me@ziplineeci.io"
+          }
+        }
+      ],
+      "insertedAt": "2020-01-31T11:17:47.177075Z",
+      "updatedAt": "2020-01-31T11:18:13.176065Z",
+      "duration": 25000000000,
+      "pendingDuration": 0
+    },
+    {
+      "name": "release",
+      "id": "506621953611268097",
+      "repoSource": "github.com",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-letsencrypt-certificate",
+      "releaseVersion": "1.2.4",
+      "releaseStatus": "succeeded",
+      "triggerEvents": [
+        {
+          "manual": {
+            "userID": "me@ziplineeci.io"
+          }
+        }
+      ],
+      "insertedAt": "2019-11-25T10:52:30.491235Z",
+      "updatedAt": "2019-11-25T10:53:40.553403Z",
+      "duration": 70000000000,
+      "pendingDuration": 0
+    },
+    {
+      "name": "release",
+      "id": "503840582434914307",
+      "repoSource": "github.com",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-letsencrypt-certificate",
+      "releaseVersion": "1.2.3",
+      "releaseStatus": "succeeded",
+      "triggerEvents": [
+        {
+          "manual": {
+            "userID": "me@ziplineeci.io"
+          }
+        }
+      ],
+      "insertedAt": "2019-11-15T15:05:43.369623Z",
+      "updatedAt": "2019-11-15T15:06:13.276773Z",
+      "duration": 29000000000,
+      "pendingDuration": 0
+    }
+  ],
+  "pagination": {
+    "page": 1,
+    "size": 10,
+    "totalPages": 1,
+    "totalItems": 10
+  }
+}

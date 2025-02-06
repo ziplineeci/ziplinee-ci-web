@@ -1,0 +1,70 @@
+{
+  "id": "635745212316319756",
+  "repoSource": "github.com",
+  "repoOwner": "ziplineeci",
+  "repoName": "ziplinee-ci-crypt",
+  "repoBranch": "main",
+  "repoRevision": "2bdac368fc50e1a14d7e7122bad36a12f43cb533",
+  "buildVersion": "0.0.42",
+  "buildStatus": "succeeded",
+  "labels": [
+    {
+      "key": "app-group",
+      "value": "ziplinee-ci"
+    },
+    {
+      "key": "language",
+      "value": "golang"
+    },
+    {
+      "key": "team",
+      "value": "ziplinee-team"
+    },
+    {
+      "key": "type",
+      "value": "library"
+    }
+  ],
+  "commits": [
+    {
+      "message": "add GetInvalidRestrictedSecrets",
+      "author": {
+        "email": "me@ziplineeci.io",
+        "name": "Just Me",
+        "username": "JustMe"
+      }
+    }
+  ],
+  "triggerEvents": [
+    {
+      "fired": true,
+      "git": {
+        "event": "push",
+        "repository": "github.com/ziplineeci/ziplinee-ci-crypt",
+        "branch": "main"
+      }
+    }
+  ],
+  "insertedAt": "2021-02-23T12:47:21.844255Z",
+  "startedAt": "2021-02-23T12:47:23.000472Z",
+  "updatedAt": "2021-02-23T12:48:11.021732Z",
+  "duration": 48000000000,
+  "pendingDuration": 1000000000,
+  "lastUpdatedAt": "2021-02-23T12:48:11.021732Z",
+  "extraInfo": {
+    "medianPendingDuration": 0,
+    "medianDuration": 37000000000
+  },
+  "groups": [
+    {
+      "id": "568087204531535884",
+      "name": "Ziplinee"
+    }
+  ],
+  "organizations": [
+    {
+      "id": "568393673343696906",
+      "name": "Ziplinee"
+    }
+  ]
+}

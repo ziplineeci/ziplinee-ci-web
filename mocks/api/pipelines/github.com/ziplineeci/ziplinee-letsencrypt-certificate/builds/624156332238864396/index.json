@@ -1,0 +1,92 @@
+{
+  "id": "624156332238864396",
+  "repoSource": "github.com",
+  "repoOwner": "ziplineeci",
+  "repoName": "ziplinee-letsencrypt-certificate",
+  "repoBranch": "feature-upload-cf-ssl",
+  "repoRevision": "204042678d77237342640f475744560859e77fda",
+  "buildVersion": "1.2.9-feature-upload-cf-ssl-218",
+  "buildStatus": "succeeded",
+  "labels": [
+    {
+      "key": "app-group",
+      "value": "ziplinee-controllers"
+    },
+    {
+      "key": "language",
+      "value": "golang"
+    },
+    {
+      "key": "team",
+      "value": "ziplinee-team"
+    },
+    {
+      "key": "type",
+      "value": "service"
+    }
+  ],
+  "releaseTargets": [
+    {
+      "name": "release",
+      "activeReleases": [
+        {
+          "name": "release",
+          "id": "657201968156409872",
+          "repoSource": "github.com",
+          "repoOwner": "ziplineeci",
+          "repoName": "ziplinee-letsencrypt-certificate",
+          "releaseVersion": "1.2.10",
+          "releaseStatus": "succeeded",
+          "triggerEvents": [
+            {
+              "fired": true,
+              "manual": {
+                "userID": "me@ziplineeci.io"
+              }
+            }
+          ],
+          "insertedAt": "2021-05-10T07:42:04.070833Z",
+          "startedAt": "2021-05-10T07:42:05.537383Z",
+          "updatedAt": "2021-05-10T07:42:35.861327Z",
+          "duration": 30000000000,
+          "pendingDuration": 1000000000,
+          "extraInfo": {
+            "medianPendingDuration": 1000000000,
+            "medianDuration": 32000000000
+          }
+        }
+      ]
+    }
+  ],
+  "manifest": "builder:\n  track: dev\n\nlabels:\n  app-group: ziplinee-controllers\n  type: service\n  team: ziplinee-team\n  language: golang\n\nversion:\n  semver:\n    major: 1\n    minor: 2\n    patch: 9\n    labelTemplate: '{{branch}}-{{auto}}'\n    releaseBranch: 1.2.9\n\nstages:\n  build-lint-and-package:\n    parallelStages:\n      build:\n        image: golang:1.15.5-alpine3.12\n        env:\n          CGO_ENABLED: 0\n          GOOS: linux\n        commands:\n        - go test ./...\n        - go build -a -installsuffix cgo -ldflags \"-X main.appgroup=${ZIPLINEE_LABEL_APP_GROUP} -X main.app=${ZIPLINEE_GIT_NAME} -X main.version=${ZIPLINEE_BUILD_VERSION} -X main.revision=${ZIPLINEE_GIT_REVISION} -X main.branch=${ZIPLINEE_GIT_BRANCH} -X main.buildDate=${ZIPLINEE_BUILD_DATETIME}\" -o ./publish/${ZIPLINEE_GIT_NAME} .\n\n      lint-helm-chart:\n        image: extensions/helm:dev\n        action: lint\n\n      package-helm-chart:\n        image: extensions/helm:dev\n        action: package\n\n  bake:\n    image: extensions/docker:dev\n    action: build\n    repositories:\n    - ziplinee\n    path: ./publish\n    copy:\n    - /etc/ssl/certs/ca-certificates.crt\n\n  check-container:\n    parallelStages:\n      check-efficiency:\n        image: extensions/docker:dev\n        action: dive\n        repositories:\n        - ziplinee\n\n      vulnerability-scan:\n        image: extensions/docker:dev\n        action: trivy\n        repositories:\n        - ziplinee\n\n  push-to-docker-hub:\n    image: extensions/docker:dev\n    action: push\n    repositories:\n    - ziplinee\n\n  test-helm-chart:\n    services:\n    - name: kubernetes\n      image: bsycorp/kind:latest-1.17\n      readiness:\n        path: /kubernetes-ready\n        port: 10080\n    image: extensions/helm:dev\n    action: test\n    values: |-\n      secret:\n        letsencryptAccountJson: {}\n        letsencryptAccountKey: abc\n        cloudflareApiEmail: bot@ziplineeci.io\n        cloudflareApiKey: abc\n      imagePullSecret:\n        registryURL: https://index.docker.io/v1/\n        username: ***\n        password: ***\n\n  clone-charts-repo:\n    image: extensions/git-clone:dev\n    repo: helm-charts\n    branch: main\n\n  publish-helm-chart:\n    image: extensions/helm:dev\n    action: publish\n    repoBranch: main\n\n  slack-notify:\n    image: extensions/slack-build-status:dev\n    workspace: ziplinee\n    channels:\n    - '#build-status'\n    when:\n      status == 'succeeded' ||\n      status == 'failed'\n\nreleases:\n  release:\n    stages:\n      clone-charts-repo:\n        image: extensions/git-clone:dev\n        repo: helm-charts\n        branch: main\n\n      purge-prerelease-helm-charts:\n        image: extensions/helm:dev\n        action: purge\n        repoBranch: main\n\n      create-github-release:\n        image: extensions/github-release:dev",
+  "manifestWithDefaults": "builder:\n  track: dev\n  os: linux\n  type: docker\nlabels:\n  app-group: ziplinee-controllers\n  language: golang\n  team: ziplinee-team\n  type: service\nversion:\n  semver:\n    major: 1\n    minor: 2\n    patch: \"9\"\n    labelTemplate: '{{branch}}-{{auto}}'\n    releaseBranch: 1.2.9\nstages:\n  build-lint-and-package:\n    when: status == 'succeeded'\n    parallelStages:\n    - image: golang:1.15.5-alpine3.12\n      shell: /bin/sh\n      workDir: /ziplinee-work\n      commands:\n      - go test ./...\n      - go build -a -installsuffix cgo -ldflags \"-X main.appgroup=${ZIPLINEE_LABEL_APP_GROUP}\n        -X main.app=${ZIPLINEE_GIT_NAME} -X main.version=${ZIPLINEE_BUILD_VERSION}\n        -X main.revision=${ZIPLINEE_GIT_REVISION} -X main.branch=${ZIPLINEE_GIT_BRANCH}\n        -X main.buildDate=${ZIPLINEE_BUILD_DATETIME}\" -o ./publish/${ZIPLINEE_GIT_NAME}\n        .\n      when: status == 'succeeded'\n      env:\n        CGO_ENABLED: \"0\"\n        GOOS: linux\n    - image: extensions/helm:dev\n      shell: /bin/sh\n      workDir: /ziplinee-work\n      when: status == 'succeeded'\n      action: lint\n    - image: extensions/helm:dev\n      shell: /bin/sh\n      workDir: /ziplinee-work\n      when: status == 'succeeded'\n      action: package\n  bake:\n    image: extensions/docker:dev\n    shell: /bin/sh\n    workDir: /ziplinee-work\n    when: status == 'succeeded'\n    action: build\n    copy:\n    - /etc/ssl/certs/ca-certificates.crt\n    path: ./publish\n    repositories:\n    - ziplinee\n  check-container:\n    when: status == 'succeeded'\n    parallelStages:\n    - image: extensions/docker:dev\n      shell: /bin/sh\n      workDir: /ziplinee-work\n      when: status == 'succeeded'\n      action: dive\n      repositories:\n      - ziplinee\n    - image: extensions/docker:dev\n      shell: /bin/sh\n      workDir: /ziplinee-work\n      when: status == 'succeeded'\n      action: trivy\n      repositories:\n      - ziplinee\n  push-to-docker-hub:\n    image: extensions/docker:dev\n    shell: /bin/sh\n    workDir: /ziplinee-work\n    when: status == 'succeeded'\n    action: push\n    repositories:\n    - ziplinee\n  test-helm-chart:\n    image: extensions/helm:dev\n    shell: /bin/sh\n    workDir: /ziplinee-work\n    when: status == 'succeeded'\n    services:\n    - name: kubernetes\n      image: bsycorp/kind:latest-1.17\n      shell: /bin/sh\n      multiStage: false\n      when: status == 'succeeded'\n      readiness:\n        path: /kubernetes-ready\n        timeoutSeconds: 60\n        port: 10080\n        protocol: http\n        hostname: kubernetes\n    action: test\n    values: |-\n      secret:\n        letsencryptAccountJson: {}\n        letsencryptAccountKey: abc\n        cloudflareApiEmail: bot@ziplineeci.io\n        cloudflareApiKey: abc\n      imagePullSecret:\n        registryURL: https://index.docker.io/v1/\n        username: ***\n        password: ***\n  clone-charts-repo:\n    image: extensions/git-clone:dev\n    shell: /bin/sh\n    workDir: /ziplinee-work\n    when: status == 'succeeded'\n    branch: main\n    repo: helm-charts\n  publish-helm-chart:\n    image: extensions/helm:dev\n    shell: /bin/sh\n    workDir: /ziplinee-work\n    when: status == 'succeeded'\n    action: publish\n    repoBranch: main\n  slack-notify:\n    image: extensions/slack-build-status:dev\n    shell: /bin/sh\n    workDir: /ziplinee-work\n    when: status == 'succeeded' || status == 'failed'\n    channels:\n    - '#build-status'\n    workspace: ziplinee\nreleases:\n  release:\n    builder:\n      track: dev\n      os: linux\n      type: docker\n    clone: false\n    stages:\n      clone-charts-repo:\n        image: extensions/git-clone:dev\n        shell: /bin/sh\n        workDir: /ziplinee-work\n        when: status == 'succeeded'\n        branch: main\n        repo: helm-charts\n      purge-prerelease-helm-charts:\n        image: extensions/helm:dev\n        shell: /bin/sh\n        workDir: /ziplinee-work\n        when: status == 'succeeded'\n        action: purge\n        repoBranch: main\n      create-github-release:\n        image: extensions/github-release:dev\n        shell: /bin/sh\n        workDir: /ziplinee-work\n        when: status == 'succeeded'\n",
+  "commits": [
+    {
+      "message": "Refactor Upsert to not do anything if the certificate has the same expiration date.",
+      "author": {
+        "email": "me@ziplineeci.io",
+        "name": "Just Me",
+        "username": "JustMe"
+      }
+    }
+  ],
+  "triggerEvents": [
+    {
+      "git": {
+        "event": "push",
+        "repository": "github.com/ziplineeci/ziplinee-letsencrypt-certificate",
+        "branch": "feature-upload-cf-ssl"
+      }
+    }
+  ],
+  "insertedAt": "2021-01-13T14:23:16.312765Z",
+  "startedAt": "2021-01-13T14:23:17.857961Z",
+  "updatedAt": "2021-01-13T14:26:31.926898Z",
+  "duration": 194000000000,
+  "pendingDuration": 1000000000,
+  "organizations": [
+    {
+      "name": "Ziplinee"
+    }
+  ]
+}

@@ -3,8 +3,8 @@
     {
       "id": "592469175722573834",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-api",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-api",
       "repoBranch": "main",
       "repoRevision": "343bc81964e03f08132d9571a1b9154b37f1e4de",
       "buildVersion": "0.1.1479",
@@ -12,7 +12,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "estafette-ci"
+          "value": "ziplinee-ci"
         },
         {
           "key": "language",
@@ -20,7 +20,7 @@
         },
         {
           "key": "team",
-          "value": "estafette"
+          "value": "ziplineeci"
         },
         {
           "key": "type",
@@ -29,7 +29,7 @@
       ],
       "releaseTargets": [
         {
-          "name": "tooling-estafette",
+          "name": "tooling-ziplineeci",
           "actions": [
             {
               "name": "deploy-canary"
@@ -50,7 +50,7 @@
         {
           "message": "set default branch in manifest preferences to main if the current branch is main",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -61,7 +61,7 @@
           "pipeline": {
             "event": "finished",
             "status": "succeeded",
-            "name": "github.com/estafette/estafette-ci-db-migrator",
+            "name": "github.com/ziplineeci/ziplinee-ci-db-migrator",
             "branch": "master"
           },
           "builds": {
@@ -73,7 +73,7 @@
         {
           "git": {
             "event": "push",
-            "repository": "github.com/estafette/estafette-ci-api",
+            "repository": "github.com/ziplineeci/ziplinee-ci-api",
             "branch": "main"
           }
         }
@@ -87,8 +87,8 @@
     {
       "id": "592450758323699722",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-api",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-api",
       "repoBranch": "main",
       "repoRevision": "40e30355f28aa44aa549a07825b14b501275e6cf",
       "buildVersion": "0.1.1478",
@@ -96,7 +96,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "estafette-ci"
+          "value": "ziplinee-ci"
         },
         {
           "key": "language",
@@ -104,7 +104,7 @@
         },
         {
           "key": "team",
-          "value": "estafette"
+          "value": "ziplineeci"
         },
         {
           "key": "type",
@@ -113,7 +113,7 @@
       ],
       "releaseTargets": [
         {
-          "name": "tooling-estafette",
+          "name": "tooling-ziplineeci",
           "actions": [
             {
               "name": "deploy-canary"
@@ -134,7 +134,7 @@
         {
           "message": "update ci-manifest to set both master and main as default release branches",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -145,7 +145,7 @@
           "pipeline": {
             "event": "finished",
             "status": "succeeded",
-            "name": "github.com/estafette/estafette-ci-db-migrator",
+            "name": "github.com/ziplineeci/ziplinee-ci-db-migrator",
             "branch": "master"
           },
           "builds": {
@@ -157,7 +157,7 @@
         {
           "git": {
             "event": "push",
-            "repository": "github.com/estafette/estafette-ci-api",
+            "repository": "github.com/ziplineeci/ziplinee-ci-api",
             "branch": "main"
           }
         }
@@ -171,8 +171,8 @@
     {
       "id": "591893345738522635",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-api",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-api",
       "repoBranch": "main",
       "repoRevision": "fcdd0c2e786b18e7ec69494f2998eaab281a7f1d",
       "buildVersion": "0.1.1477",
@@ -180,7 +180,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "estafette-ci"
+          "value": "ziplinee-ci"
         },
         {
           "key": "language",
@@ -188,7 +188,7 @@
         },
         {
           "key": "team",
-          "value": "estafette"
+          "value": "ziplineeci"
         },
         {
           "key": "type",
@@ -197,7 +197,7 @@
       ],
       "releaseTargets": [
         {
-          "name": "tooling-estafette",
+          "name": "tooling-ziplineeci",
           "actions": [
             {
               "name": "deploy-canary"
@@ -218,7 +218,7 @@
         {
           "message": "Fix templates path (#92)\n\n* Use templatesPath instead of configFilePath when generating templates.\r\n\r\n* Add tests for get templates and generate templates.",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -229,7 +229,7 @@
           "pipeline": {
             "event": "finished",
             "status": "succeeded",
-            "name": "github.com/estafette/estafette-ci-db-migrator",
+            "name": "github.com/ziplineeci/ziplinee-ci-db-migrator",
             "branch": "master"
           },
           "builds": {
@@ -241,7 +241,7 @@
         {
           "git": {
             "event": "push",
-            "repository": "github.com/estafette/estafette-ci-api",
+            "repository": "github.com/ziplineeci/ziplinee-ci-api",
             "branch": "main"
           }
         }
@@ -255,8 +255,8 @@
     {
       "id": "591888256521961484",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-api",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-api",
       "repoBranch": "fix-templates-path",
       "repoRevision": "b820f092333842b3e5c2419d8c6a4d5943fe5290",
       "buildVersion": "0.1.1476-fix-templates-path",
@@ -264,7 +264,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "estafette-ci"
+          "value": "ziplinee-ci"
         },
         {
           "key": "language",
@@ -272,7 +272,7 @@
         },
         {
           "key": "team",
-          "value": "estafette"
+          "value": "ziplineeci"
         },
         {
           "key": "type",
@@ -281,7 +281,7 @@
       ],
       "releaseTargets": [
         {
-          "name": "tooling-estafette",
+          "name": "tooling-ziplineeci",
           "actions": [
             {
               "name": "deploy-canary"
@@ -302,7 +302,7 @@
         {
           "message": "Use templatesPath instead of configFilePath when generating templates.",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -310,7 +310,7 @@
         {
           "message": "Add tests for get templates and generate templates.",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -321,7 +321,7 @@
           "pipeline": {
             "event": "finished",
             "status": "succeeded",
-            "name": "github.com/estafette/estafette-ci-db-migrator",
+            "name": "github.com/ziplineeci/ziplinee-ci-db-migrator",
             "branch": "master"
           },
           "builds": {
@@ -333,7 +333,7 @@
         {
           "git": {
             "event": "push",
-            "repository": "github.com/estafette/estafette-ci-api",
+            "repository": "github.com/ziplineeci/ziplinee-ci-api",
             "branch": "fix-templates-path"
           }
         }
@@ -347,8 +347,8 @@
     {
       "id": "591887682742222860",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-api",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-api",
       "repoBranch": "fix-templates-path",
       "repoRevision": "b696237f0c808b28480a2cac3a1dd1218d5e8884",
       "buildVersion": "0.1.1475-fix-templates-path",
@@ -356,7 +356,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "estafette-ci"
+          "value": "ziplinee-ci"
         },
         {
           "key": "language",
@@ -364,7 +364,7 @@
         },
         {
           "key": "team",
-          "value": "estafette"
+          "value": "ziplineeci"
         },
         {
           "key": "type",
@@ -373,7 +373,7 @@
       ],
       "releaseTargets": [
         {
-          "name": "tooling-estafette",
+          "name": "tooling-ziplineeci",
           "actions": [
             {
               "name": "deploy-canary"
@@ -394,7 +394,7 @@
         {
           "message": "Add tests for get templates and generate templates.",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -405,7 +405,7 @@
           "pipeline": {
             "event": "finished",
             "status": "succeeded",
-            "name": "github.com/estafette/estafette-ci-db-migrator",
+            "name": "github.com/ziplineeci/ziplinee-ci-db-migrator",
             "branch": "master"
           },
           "builds": {
@@ -417,7 +417,7 @@
         {
           "git": {
             "event": "push",
-            "repository": "github.com/estafette/estafette-ci-api",
+            "repository": "github.com/ziplineeci/ziplinee-ci-api",
             "branch": "fix-templates-path"
           }
         }
@@ -431,8 +431,8 @@
     {
       "id": "591875053655785482",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-api",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-api",
       "repoBranch": "fix-templates-path",
       "repoRevision": "706aa0b6d3f45c84286be0e9af81083e6dd1bee8",
       "buildVersion": "0.1.1474-fix-templates-path",
@@ -440,7 +440,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "estafette-ci"
+          "value": "ziplinee-ci"
         },
         {
           "key": "language",
@@ -448,7 +448,7 @@
         },
         {
           "key": "team",
-          "value": "estafette"
+          "value": "ziplineeci"
         },
         {
           "key": "type",
@@ -457,7 +457,7 @@
       ],
       "releaseTargets": [
         {
-          "name": "tooling-estafette",
+          "name": "tooling-ziplineeci",
           "actions": [
             {
               "name": "deploy-canary"
@@ -478,7 +478,7 @@
         {
           "message": "Fix read directory from templatesPath",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -486,7 +486,7 @@
         {
           "message": "Use templatesPath instead of configFilePath when generating templates.",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -497,7 +497,7 @@
           "pipeline": {
             "event": "finished",
             "status": "succeeded",
-            "name": "github.com/estafette/estafette-ci-db-migrator",
+            "name": "github.com/ziplineeci/ziplinee-ci-db-migrator",
             "branch": "master"
           },
           "builds": {
@@ -509,7 +509,7 @@
         {
           "git": {
             "event": "push",
-            "repository": "github.com/estafette/estafette-ci-api",
+            "repository": "github.com/ziplineeci/ziplinee-ci-api",
             "branch": "fix-templates-path"
           }
         }
@@ -523,8 +523,8 @@
     {
       "id": "591811220273430540",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-api",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-api",
       "repoBranch": "main",
       "repoRevision": "2f9b633916107cfaa6091f5c6b0b0867ead402b9",
       "buildVersion": "0.1.1473",
@@ -532,7 +532,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "estafette-ci"
+          "value": "ziplinee-ci"
         },
         {
           "key": "language",
@@ -540,7 +540,7 @@
         },
         {
           "key": "team",
-          "value": "estafette"
+          "value": "ziplineeci"
         },
         {
           "key": "type",
@@ -549,7 +549,7 @@
       ],
       "releaseTargets": [
         {
-          "name": "tooling-estafette",
+          "name": "tooling-ziplineeci",
           "actions": [
             {
               "name": "deploy-canary"
@@ -570,7 +570,7 @@
         {
           "message": "Fix read directory from templatesPath (#91)",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -581,7 +581,7 @@
           "pipeline": {
             "event": "finished",
             "status": "succeeded",
-            "name": "github.com/estafette/estafette-ci-db-migrator",
+            "name": "github.com/ziplineeci/ziplinee-ci-db-migrator",
             "branch": "master"
           },
           "builds": {
@@ -593,7 +593,7 @@
         {
           "git": {
             "event": "push",
-            "repository": "github.com/estafette/estafette-ci-api",
+            "repository": "github.com/ziplineeci/ziplinee-ci-api",
             "branch": "main"
           }
         }
@@ -607,8 +607,8 @@
     {
       "id": "591047539920928778",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-api",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-api",
       "repoBranch": "fix-templates-path",
       "repoRevision": "e7703dd51f60f894cacdbfc877caf8e3ad40c484",
       "buildVersion": "0.1.1472-fix-templates-path",
@@ -616,7 +616,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "estafette-ci"
+          "value": "ziplinee-ci"
         },
         {
           "key": "language",
@@ -624,7 +624,7 @@
         },
         {
           "key": "team",
-          "value": "estafette"
+          "value": "ziplineeci"
         },
         {
           "key": "type",
@@ -633,7 +633,7 @@
       ],
       "releaseTargets": [
         {
-          "name": "tooling-estafette",
+          "name": "tooling-ziplineeci",
           "actions": [
             {
               "name": "deploy-canary"
@@ -654,7 +654,7 @@
         {
           "message": "Fix read directory from templatesPath",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -665,7 +665,7 @@
           "pipeline": {
             "event": "finished",
             "status": "succeeded",
-            "name": "github.com/estafette/estafette-ci-db-migrator",
+            "name": "github.com/ziplineeci/ziplinee-ci-db-migrator",
             "branch": "master"
           },
           "builds": {
@@ -677,7 +677,7 @@
         {
           "git": {
             "event": "push",
-            "repository": "github.com/estafette/estafette-ci-api",
+            "repository": "github.com/ziplineeci/ziplinee-ci-api",
             "branch": "fix-templates-path"
           }
         }
@@ -691,8 +691,8 @@
     {
       "id": "591039540382793738",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-api",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-api",
       "repoBranch": "main",
       "repoRevision": "5a6ebddf37283ee53199bf4d2c2c032e4c25ca87",
       "buildVersion": "0.1.1471",
@@ -700,7 +700,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "estafette-ci"
+          "value": "ziplinee-ci"
         },
         {
           "key": "language",
@@ -708,7 +708,7 @@
         },
         {
           "key": "team",
-          "value": "estafette"
+          "value": "ziplineeci"
         },
         {
           "key": "type",
@@ -717,7 +717,7 @@
       ],
       "releaseTargets": [
         {
-          "name": "tooling-estafette",
+          "name": "tooling-ziplineeci",
           "actions": [
             {
               "name": "deploy-canary"
@@ -738,7 +738,7 @@
         {
           "message": "Split templates path from config file path. (#90)\n\n* Split templates path from config file path.\r\n\r\n* Change name of configmap for templates.",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -749,7 +749,7 @@
           "pipeline": {
             "event": "finished",
             "status": "succeeded",
-            "name": "github.com/estafette/estafette-ci-db-migrator",
+            "name": "github.com/ziplineeci/ziplinee-ci-db-migrator",
             "branch": "master"
           },
           "builds": {
@@ -761,7 +761,7 @@
         {
           "git": {
             "event": "push",
-            "repository": "github.com/estafette/estafette-ci-api",
+            "repository": "github.com/ziplineeci/ziplinee-ci-api",
             "branch": "main"
           }
         }
@@ -775,8 +775,8 @@
     {
       "id": "591024269951959050",
       "repoSource": "github.com",
-      "repoOwner": "estafette",
-      "repoName": "estafette-ci-api",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-api",
       "repoBranch": "split-template-path",
       "repoRevision": "d09e6847a21156ca734c53251b99ebf881cbae9a",
       "buildVersion": "0.1.1470-split-template-path",
@@ -784,7 +784,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "estafette-ci"
+          "value": "ziplinee-ci"
         },
         {
           "key": "language",
@@ -792,7 +792,7 @@
         },
         {
           "key": "team",
-          "value": "estafette"
+          "value": "ziplineeci"
         },
         {
           "key": "type",
@@ -801,7 +801,7 @@
       ],
       "releaseTargets": [
         {
-          "name": "tooling-estafette",
+          "name": "tooling-ziplineeci",
           "actions": [
             {
               "name": "deploy-canary"
@@ -822,7 +822,7 @@
         {
           "message": "Change name of configmap for templates.",
           "author": {
-            "email": "me@estafette.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -833,7 +833,7 @@
           "pipeline": {
             "event": "finished",
             "status": "succeeded",
-            "name": "github.com/estafette/estafette-ci-db-migrator",
+            "name": "github.com/ziplineeci/ziplinee-ci-db-migrator",
             "branch": "master"
           },
           "builds": {
@@ -845,7 +845,7 @@
         {
           "git": {
             "event": "push",
-            "repository": "github.com/estafette/estafette-ci-api",
+            "repository": "github.com/ziplineeci/ziplinee-ci-api",
             "branch": "split-template-path"
           }
         }

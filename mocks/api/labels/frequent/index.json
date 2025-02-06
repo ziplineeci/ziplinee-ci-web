@@ -7,32 +7,32 @@
         },
         {
             "key": "app-group",
-            "value": "zipline-ci",
+            "value": "ziplinee-ci",
             "pipelinescount": 5
         },
         {
             "key": "app-group",
-            "value": "zipline-ci-extensions",
+            "value": "ziplinee-ci-extensions",
             "pipelinescount": 3
         },
         {
             "key": "app-group",
-            "value": "zipline-kube-controllers",
+            "value": "ziplinee-kube-controllers",
             "pipelinescount": 3
         },
         {
             "key": "team",
-            "value": "zipline-team",
+            "value": "ziplinee-team",
             "pipelinescount": 2
         },
         {
             "key": "team",
-            "value": "zipline-ci-team",
+            "value": "ziplinee-ci-team",
             "pipelinescount": 2
         },
         {
             "key": "team",
-            "value": "zipline-extension-team",
+            "value": "ziplinee-extension-team",
             "pipelinescount": 2
         },
         {

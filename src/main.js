@@ -119,7 +119,7 @@ router.beforeEach((to, from, next) => {
 router.afterEach((to, from) => {
   Vue.nextTick(() => {
     // set page title by getting the name from each match along the route
-    document.title = 'Estafette | ' + to.matched.reduce((title, r) => {
+    document.title = 'ZiplineeCI | ' + to.matched.reduce((title, r) => {
       if (title && title !== '') {
         title += ' > '
       }

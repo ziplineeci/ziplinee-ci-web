@@ -3,8 +3,8 @@
     {
       "id": "664371374972960785",
       "repoSource": "github.com",
-      "repoOwner": "ziplineci",
-      "repoName": "zipline-ci-api",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-api",
       "repoBranch": "main",
       "repoRevision": "6a25676b2dee566f8e951a4e21164122e074584e",
       "buildVersion": "1.0.0-main-1728",
@@ -12,7 +12,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "zipline-ci"
+          "value": "ziplinee-ci"
         },
         {
           "key": "language",
@@ -20,7 +20,7 @@
         },
         {
           "key": "team",
-          "value": "zipline"
+          "value": "ziplinee"
         },
         {
           "key": "type",
@@ -29,7 +29,7 @@
       ],
       "releaseTargets": [
         {
-          "name": "tooling-zipline",
+          "name": "tooling-ziplinee",
           "actions": [
             {
               "name": "deploy-canary"
@@ -48,19 +48,19 @@
           ],
           "activeReleases": [
             {
-              "name": "tooling-zipline",
+              "name": "tooling-ziplinee",
               "action": "deploy-stable",
               "id": "664373458571591697",
               "repoSource": "github.com",
-              "repoOwner": "ziplineci",
-              "repoName": "zipline-ci-api",
+              "repoOwner": "ziplineeci",
+              "repoName": "ziplinee-ci-api",
               "releaseVersion": "1.0.0-main-1728",
               "releaseStatus": "succeeded",
               "triggerEvents": [
                 {
                   "fired": true,
                   "manual": {
-                    "userID": "me@zipline.io"
+                    "userID": "me@ziplineeci.io"
                   }
                 }
               ],
@@ -75,19 +75,19 @@
               }
             },
             {
-              "name": "tooling-zipline",
+              "name": "tooling-ziplinee",
               "action": "deploy-canary",
               "id": "664372945397841937",
               "repoSource": "github.com",
-              "repoOwner": "ziplineci",
-              "repoName": "zipline-ci-api",
+              "repoOwner": "ziplineeci",
+              "repoName": "ziplinee-ci-api",
               "releaseVersion": "1.0.0-main-1728",
               "releaseStatus": "succeeded",
               "triggerEvents": [
                 {
                   "fired": true,
                   "manual": {
-                    "userID": "me@zipline.io"
+                    "userID": "me@ziplineeci.io"
                   }
                 }
               ],
@@ -102,19 +102,19 @@
               }
             },
             {
-              "name": "tooling-zipline",
+              "name": "tooling-ziplinee",
               "action": "restart-stable",
               "id": "664308454879461393",
               "repoSource": "github.com",
-              "repoOwner": "ziplineci",
-              "repoName": "zipline-ci-api",
+              "repoOwner": "ziplineeci",
+              "repoName": "ziplinee-ci-api",
               "releaseVersion": "1.0.0-main-1722",
               "releaseStatus": "succeeded",
               "triggerEvents": [
                 {
                   "fired": true,
                   "manual": {
-                    "userID": "me@zipline.io"
+                    "userID": "me@ziplineeci.io"
                   }
                 }
               ],
@@ -129,19 +129,19 @@
               }
             },
             {
-              "name": "tooling-zipline",
+              "name": "tooling-ziplinee",
               "action": "rollback-canary",
               "id": "663722926313242642",
               "repoSource": "github.com",
-              "repoOwner": "ziplineci",
-              "repoName": "zipline-ci-api",
+              "repoOwner": "ziplineeci",
+              "repoName": "ziplinee-ci-api",
               "releaseVersion": "1.0.0-main-1710",
               "releaseStatus": "succeeded",
               "triggerEvents": [
                 {
                   "fired": true,
                   "manual": {
-                    "userID": "me@zipline.io"
+                    "userID": "me@ziplineeci.io"
                   }
                 }
               ],
@@ -167,14 +167,14 @@
               "name": "helm-diff",
               "id": "503219038331437061",
               "repoSource": "github.com",
-              "repoOwner": "ziplineci",
-              "repoName": "zipline-ci-api",
+              "repoOwner": "ziplineeci",
+              "repoName": "ziplinee-ci-api",
               "releaseVersion": "1.0.0-add-official-helm-chart-892",
               "releaseStatus": "succeeded",
               "triggerEvents": [
                 {
                   "manual": {
-                    "userID": "me@zipline.io"
+                    "userID": "me@ziplineeci.io"
                   }
                 }
               ],
@@ -190,7 +190,7 @@
         {
           "message": "fix default bot sorting",
           "author": {
-            "email": "me@zipline.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -202,7 +202,7 @@
           "pipeline": {
             "event": "finished",
             "status": "succeeded",
-            "name": "github.com/zipline/zipline-ci-db-migrator",
+            "name": "github.com/ziplineeci/ziplinee-ci-db-migrator",
             "branch": "main"
           },
           "builds": {
@@ -215,7 +215,7 @@
           "fired": true,
           "git": {
             "event": "push",
-            "repository": "github.com/zipline/zipline-ci-api",
+            "repository": "github.com/ziplineeci/ziplinee-ci-api",
             "branch": "main"
           }
         }
@@ -233,13 +233,13 @@
       "groups": [
         {
           "id": "568087204531535884",
-          "name": "zipline"
+          "name": "ziplinee"
         }
       ],
       "organizations": [
         {
           "id": "568393673343696906",
-          "name": "zipline"
+          "name": "ziplinee"
         },
         {
           "id": "568030038580756491",
@@ -250,8 +250,8 @@
     {
       "id": "664302210794422290",
       "repoSource": "github.com",
-      "repoOwner": "ziplineci",
-      "repoName": "zipline-ci-builder",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-builder",
       "repoBranch": "main",
       "repoRevision": "f3307c327eaa6cd885b19e0ea120ba103a76a05a",
       "buildVersion": "0.0.883",
@@ -259,7 +259,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "zipline-ci"
+          "value": "ziplinee-ci"
         },
         {
           "key": "language",
@@ -267,7 +267,7 @@
         },
         {
           "key": "team",
-          "value": "zipline"
+          "value": "ziplinee"
         }
       ],
       "releaseTargets": [
@@ -278,8 +278,8 @@
               "name": "dev",
               "id": "664302984403714064",
               "repoSource": "github.com",
-              "repoOwner": "ziplineci",
-              "repoName": "zipline-ci-builder",
+              "repoOwner": "ziplineeci",
+              "repoName": "ziplinee-ci-builder",
               "releaseVersion": "0.0.883",
               "releaseStatus": "succeeded",
               "triggerEvents": [
@@ -288,8 +288,8 @@
                   "pipeline": {
                     "buildVersion": "0.0.883",
                     "repoSource": "github.com",
-                    "repoOwner": "ziplineci",
-                    "repoName": "zipline-ci-builder",
+                    "repoOwner": "ziplineeci",
+                    "repoName": "ziplinee-ci-builder",
                     "repoBranch": "main",
                     "status": "succeeded",
                     "event": "finished"
@@ -315,15 +315,15 @@
               "name": "beta",
               "id": "663997181020307474",
               "repoSource": "github.com",
-              "repoOwner": "ziplineci",
-              "repoName": "zipline-ci-builder",
+              "repoOwner": "ziplineeci",
+              "repoName": "ziplinee-ci-builder",
               "releaseVersion": "0.0.882",
               "releaseStatus": "succeeded",
               "triggerEvents": [
                 {
                   "fired": true,
                   "manual": {
-                    "userID": "me@zipline.io"
+                    "userID": "me@ziplineeci.io"
                   }
                 }
               ],
@@ -346,15 +346,15 @@
               "name": "stable",
               "id": "663997192423964688",
               "repoSource": "github.com",
-              "repoOwner": "ziplineci",
-              "repoName": "zipline-ci-builder",
+              "repoOwner": "ziplineeci",
+              "repoName": "ziplinee-ci-builder",
               "releaseVersion": "0.0.882",
               "releaseStatus": "succeeded",
               "triggerEvents": [
                 {
                   "fired": true,
                   "manual": {
-                    "userID": "me@zipline.io"
+                    "userID": "me@ziplineeci.io"
                   }
                 }
               ],
@@ -377,15 +377,15 @@
               "name": "nanoserver-1809-dev",
               "id": "663802179528294416",
               "repoSource": "github.com",
-              "repoOwner": "ziplineci",
-              "repoName": "zipline-ci-builder",
+              "repoOwner": "ziplineeci",
+              "repoName": "ziplinee-ci-builder",
               "releaseVersion": "0.0.876",
               "releaseStatus": "canceled",
               "triggerEvents": [
                 {
                   "fired": true,
                   "manual": {
-                    "userID": "me@zipline.io"
+                    "userID": "me@ziplineeci.io"
                   }
                 }
               ],
@@ -407,15 +407,15 @@
               "name": "nanoserver-1809-beta",
               "id": "663802187485839377",
               "repoSource": "github.com",
-              "repoOwner": "ziplineci",
-              "repoName": "zipline-ci-builder",
+              "repoOwner": "ziplineeci",
+              "repoName": "ziplinee-ci-builder",
               "releaseVersion": "0.0.876",
               "releaseStatus": "canceled",
               "triggerEvents": [
                 {
                   "fired": true,
                   "manual": {
-                    "userID": "me@zipline.io"
+                    "userID": "me@ziplineeci.io"
                   }
                 }
               ],
@@ -437,15 +437,15 @@
               "name": "nanoserver-1809-stable",
               "id": "663802194910576656",
               "repoSource": "github.com",
-              "repoOwner": "ziplineci",
-              "repoName": "zipline-ci-builder",
+              "repoOwner": "ziplineeci",
+              "repoName": "ziplinee-ci-builder",
               "releaseVersion": "0.0.876",
               "releaseStatus": "canceled",
               "triggerEvents": [
                 {
                   "fired": true,
                   "manual": {
-                    "userID": "me@zipline.io"
+                    "userID": "me@ziplineeci.io"
                   }
                 }
               ],
@@ -465,7 +465,7 @@
         {
           "message": "upgrade to docker 20.10.7",
           "author": {
-            "email": "me@zipline.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -476,7 +476,7 @@
           "pipeline": {
             "event": "finished",
             "status": "succeeded",
-            "name": "github.com/zipline/zipline-ci-builder",
+            "name": "github.com/ziplineeci/ziplinee-ci-builder",
             "branch": ".+"
           },
           "releases": {
@@ -490,7 +490,7 @@
           "fired": true,
           "git": {
             "event": "push",
-            "repository": "github.com/zipline/zipline-ci-builder",
+            "repository": "github.com/ziplineeci/ziplinee-ci-builder",
             "branch": "main"
           }
         }
@@ -508,21 +508,21 @@
       "groups": [
         {
           "id": "568087204531535884",
-          "name": "zipline"
+          "name": "ziplinee"
         }
       ],
       "organizations": [
         {
           "id": "568393673343696906",
-          "name": "zipline"
+          "name": "ziplinee"
         }
       ]
     },
     {
       "id": "663986258637160464",
       "repoSource": "github.com",
-      "repoOwner": "ziplineci",
-      "repoName": "zipline-ci-contracts",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-contracts",
       "repoBranch": "main",
       "repoRevision": "262feb8c7593d238532524f26f0ed779a3f1dbe7",
       "buildVersion": "0.0.260",
@@ -530,7 +530,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "zipline-ci"
+          "value": "ziplinee-ci"
         },
         {
           "key": "language",
@@ -538,7 +538,7 @@
         },
         {
           "key": "team",
-          "value": "zipline"
+          "value": "ziplinee"
         },
         {
           "key": "type",
@@ -549,7 +549,7 @@
         {
           "message": "rename BuildEvent enum to BuildEventType",
           "author": {
-            "email": "me@zipline.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -560,7 +560,7 @@
           "fired": true,
           "git": {
             "event": "push",
-            "repository": "github.com/zipline/zipline-ci-contracts",
+            "repository": "github.com/ziplineeci/ziplinee-ci-contracts",
             "branch": "main"
           }
         }
@@ -578,21 +578,21 @@
       "groups": [
         {
           "id": "568087204531535884",
-          "name": "zipline"
+          "name": "ziplinee"
         }
       ],
       "organizations": [
         {
           "id": "568393673343696906",
-          "name": "zipline"
+          "name": "ziplinee"
         }
       ]
     },
     {
       "id": "635745212316319756",
       "repoSource": "github.com",
-      "repoOwner": "ziplineci",
-      "repoName": "zipline-ci-crypt",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-crypt",
       "repoBranch": "main",
       "repoRevision": "2bdac368fc50e1a14d7e7122bad36a12f43cb533",
       "buildVersion": "0.0.42",
@@ -600,7 +600,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "zipline-ci"
+          "value": "ziplinee-ci"
         },
         {
           "key": "language",
@@ -608,7 +608,7 @@
         },
         {
           "key": "team",
-          "value": "zipline-team"
+          "value": "ziplinee-team"
         },
         {
           "key": "type",
@@ -619,7 +619,7 @@
         {
           "message": "add GetInvalidRestrictedSecrets",
           "author": {
-            "email": "me@zipline.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -630,7 +630,7 @@
           "fired": true,
           "git": {
             "event": "push",
-            "repository": "github.com/zipline/zipline-ci-crypt",
+            "repository": "github.com/ziplineeci/ziplinee-ci-crypt",
             "branch": "main"
           }
         }
@@ -648,21 +648,21 @@
       "groups": [
         {
           "id": "568087204531535884",
-          "name": "zipline"
+          "name": "ziplinee"
         }
       ],
       "organizations": [
         {
           "id": "568393673343696906",
-          "name": "zipline"
+          "name": "ziplinee"
         }
       ]
     },
     {
       "id": "665120071639400465",
       "repoSource": "github.com",
-      "repoOwner": "ziplineci",
-      "repoName": "zipline-ci-demo",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-demo",
       "repoBranch": "main",
       "repoRevision": "96e910ce80a9caee99f9cde2dc46dcc66f2a840e",
       "buildVersion": "0.0.48",
@@ -670,7 +670,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "zipline-ci"
+          "value": "ziplinee-ci"
         },
         {
           "key": "language",
@@ -678,14 +678,14 @@
         },
         {
           "key": "team",
-          "value": "zipline-team"
+          "value": "ziplinee-team"
         }
       ],
       "commits": [
         {
           "message": "fetch pipeline bots",
           "author": {
-            "email": "me@zipline.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -696,7 +696,7 @@
           "fired": true,
           "git": {
             "event": "push",
-            "repository": "github.com/zipline/zipline-ci-demo",
+            "repository": "github.com/ziplineeci/ziplinee-ci-demo",
             "branch": "main"
           }
         }
@@ -714,21 +714,21 @@
       "groups": [
         {
           "id": "568087204531535884",
-          "name": "zipline"
+          "name": "ziplinee"
         }
       ],
       "organizations": [
         {
           "id": "568393673343696906",
-          "name": "zipline"
+          "name": "ziplinee"
         }
       ]
     },
     {
       "id": "663226580904869905",
       "repoSource": "github.com",
-      "repoOwner": "ziplineci",
-      "repoName": "zipline-ci-manifest",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-manifest",
       "repoBranch": "main",
       "repoRevision": "ec9991f012f1ec7c5a06f5dbcd695fe9acac4633",
       "buildVersion": "0.1.190",
@@ -736,7 +736,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "zipline-ci"
+          "value": "ziplinee-ci"
         },
         {
           "key": "language",
@@ -744,7 +744,7 @@
         },
         {
           "key": "team",
-          "value": "zipline"
+          "value": "ziplinee"
         },
         {
           "key": "type",
@@ -755,7 +755,7 @@
         {
           "message": "add bots definition to manifest to act on any github or bitbucket event",
           "author": {
-            "email": "me@zipline.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -763,7 +763,7 @@
         {
           "message": "add builder, clone and triggers to bots",
           "author": {
-            "email": "me@zipline.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -771,7 +771,7 @@
         {
           "message": "add bitbucket and github triggers instead of events property on bots to reuse trigger system",
           "author": {
-            "email": "me@zipline.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -779,7 +779,7 @@
         {
           "message": "match github and bitbucket events on repository by default if the event is repo specific",
           "author": {
-            "email": "me@zipline.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -787,7 +787,7 @@
         {
           "message": "set bot on botaction to trigger correct bot",
           "author": {
-            "email": "me@zipline.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -795,7 +795,7 @@
         {
           "message": "add event body property to bitbucket/github events",
           "author": {
-            "email": "me@zipline.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -806,7 +806,7 @@
           "fired": true,
           "git": {
             "event": "push",
-            "repository": "github.com/zipline/zipline-ci-manifest",
+            "repository": "github.com/ziplineeci/ziplinee-ci-manifest",
             "branch": "main"
           }
         }
@@ -824,21 +824,21 @@
       "groups": [
         {
           "id": "568087204531535884",
-          "name": "zipline"
+          "name": "ziplinee"
         }
       ],
       "organizations": [
         {
           "id": "568393673343696906",
-          "name": "zipline"
+          "name": "ziplinee"
         }
       ]
     },
     {
       "id": "664372343046012945",
       "repoSource": "github.com",
-      "repoOwner": "ziplineci",
-      "repoName": "zipline-ci-web",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-ci-web",
       "repoBranch": "main",
       "repoRevision": "9f8dabadb4b13187cfe4471991b767d9091738d7",
       "buildVersion": "1.0.0-main-1112",
@@ -846,7 +846,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "zipline-ci"
+          "value": "ziplinee-ci"
         },
         {
           "key": "language",
@@ -854,7 +854,7 @@
         },
         {
           "key": "team",
-          "value": "zipline-team"
+          "value": "ziplinee-team"
         },
         {
           "key": "type",
@@ -863,7 +863,7 @@
       ],
       "releaseTargets": [
         {
-          "name": "tooling-zipline",
+          "name": "tooling-ziplinee",
           "actions": [
             {
               "name": "deploy-simple"
@@ -875,19 +875,19 @@
           ],
           "activeReleases": [
             {
-              "name": "tooling-zipline",
+              "name": "tooling-ziplinee",
               "action": "deploy-simple",
               "id": "664373422710980625",
               "repoSource": "github.com",
-              "repoOwner": "ziplineci",
-              "repoName": "zipline-ci-web",
+              "repoOwner": "ziplineeci",
+              "repoName": "ziplinee-ci-web",
               "releaseVersion": "1.0.0-main-1112",
               "releaseStatus": "succeeded",
               "triggerEvents": [
                 {
                   "fired": true,
                   "manual": {
-                    "userID": "me@zipline.io"
+                    "userID": "me@ziplineeci.io"
                   }
                 }
               ],
@@ -902,18 +902,18 @@
               }
             },
             {
-              "name": "tooling-zipline",
+              "name": "tooling-ziplinee",
               "action": "restart-simple",
               "id": "566675166820335628",
               "repoSource": "github.com",
-              "repoOwner": "ziplineci",
-              "repoName": "zipline-ci-web",
+              "repoOwner": "ziplineeci",
+              "repoName": "ziplinee-ci-web",
               "releaseVersion": "0.1.942",
               "releaseStatus": "succeeded",
               "triggerEvents": [
                 {
                   "manual": {
-                    "userID": "me@zipline.io"
+                    "userID": "me@ziplineeci.io"
                   }
                 }
               ],
@@ -930,7 +930,7 @@
         {
           "message": "drop invalid filters from branches and bot filters",
           "author": {
-            "email": "me@zipline.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -941,7 +941,7 @@
           "fired": true,
           "git": {
             "event": "push",
-            "repository": "github.com/zipline/zipline-ci-web",
+            "repository": "github.com/ziplineeci/ziplinee-ci-web",
             "branch": "main"
           }
         }
@@ -959,21 +959,21 @@
       "groups": [
         {
           "id": "568087204531535884",
-          "name": "zipline"
+          "name": "ziplinee"
         }
       ],
       "organizations": [
         {
           "id": "568393673343696906",
-          "name": "zipline"
+          "name": "ziplinee"
         }
       ]
     },
     {
       "id": "611916537931399178",
       "repoSource": "github.com",
-      "repoOwner": "ziplineci",
-      "repoName": "zipline-cloudflare-dns",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-cloudflare-dns",
       "repoBranch": "main",
       "repoRevision": "b9a98cc0147565bfb0da0de14ed592d6d51ee602",
       "buildVersion": "1.2.11-main-143",
@@ -981,7 +981,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "zipline-controllers"
+          "value": "ziplinee-controllers"
         },
         {
           "key": "language",
@@ -989,7 +989,7 @@
         },
         {
           "key": "team",
-          "value": "zipline-team"
+          "value": "ziplinee-team"
         },
         {
           "key": "type",
@@ -1004,14 +1004,14 @@
               "name": "release",
               "id": "611917160581988362",
               "repoSource": "github.com",
-              "repoOwner": "ziplineci",
-              "repoName": "zipline-cloudflare-dns",
+              "repoOwner": "ziplineeci",
+              "repoName": "ziplinee-cloudflare-dns",
               "releaseVersion": "1.2.10",
               "releaseStatus": "succeeded",
               "triggerEvents": [
                 {
                   "manual": {
-                    "userID": "me@zipline.io"
+                    "userID": "me@ziplineeci.io"
                   }
                 }
               ],
@@ -1032,7 +1032,7 @@
         {
           "message": "bump version to 1.2.11",
           "author": {
-            "email": "me@zipline.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -1042,7 +1042,7 @@
         {
           "git": {
             "event": "push",
-            "repository": "github.com/zipline/zipline-cloudflare-dns",
+            "repository": "github.com/ziplineeci/ziplinee-cloudflare-dns",
             "branch": "main"
           }
         }
@@ -1060,21 +1060,21 @@
       "groups": [
         {
           "id": "568087204531535884",
-          "name": "zipline"
+          "name": "ziplinee"
         }
       ],
       "organizations": [
         {
           "id": "568030038580756491",
-          "name": "Travix"
+          "name": "ZiplineeCI"
         }
       ]
     },
     {
       "id": "657200275663814672",
       "repoSource": "github.com",
-      "repoOwner": "ziplineci",
-      "repoName": "zipline-letsencrypt-certificate",
+      "repoOwner": "ziplineeci",
+      "repoName": "ziplinee-letsencrypt-certificate",
       "repoBranch": "main",
       "repoRevision": "bd4d0f3f88f71a93f38a6602d3c42f434957ad25",
       "buildVersion": "1.2.11-main-224",
@@ -1082,7 +1082,7 @@
       "labels": [
         {
           "key": "app-group",
-          "value": "zipline-controllers"
+          "value": "ziplinee-controllers"
         },
         {
           "key": "language",
@@ -1090,7 +1090,7 @@
         },
         {
           "key": "team",
-          "value": "zipline-team"
+          "value": "ziplinee-team"
         },
         {
           "key": "type",
@@ -1105,15 +1105,15 @@
               "name": "release",
               "id": "657201968156409872",
               "repoSource": "github.com",
-              "repoOwner": "ziplineci",
-              "repoName": "zipline-letsencrypt-certificate",
+              "repoOwner": "ziplineeci",
+              "repoName": "ziplinee-letsencrypt-certificate",
               "releaseVersion": "1.2.10",
               "releaseStatus": "succeeded",
               "triggerEvents": [
                 {
                   "fired": true,
                   "manual": {
-                    "userID": "me@zipline.io"
+                    "userID": "me@ziplineeci.io"
                   }
                 }
               ],
@@ -1134,7 +1134,7 @@
         {
           "message": "bump version to 1.2.11",
           "author": {
-            "email": "me@zipline.io",
+            "email": "me@ziplineeci.io",
             "name": "Just Me",
             "username": "JustMe"
           }
@@ -1145,7 +1145,7 @@
           "fired": true,
           "git": {
             "event": "push",
-            "repository": "github.com/zipline/zipline-letsencrypt-certificate",
+            "repository": "github.com/ziplineeci/ziplinee-letsencrypt-certificate",
             "branch": "main"
           }
         }
@@ -1163,13 +1163,13 @@
       "groups": [
         {
           "id": "568087204531535884",
-          "name": "zipline"
+          "name": "ziplinee"
         }
       ],
       "organizations": [
         {
           "id": "568030038580756491",
-          "name": "Travix"
+          "name": "ZiplineeCI"
         }
       ]
     }
